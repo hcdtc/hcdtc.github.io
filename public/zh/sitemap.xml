@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/10-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/80-team-doc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/99-code-review/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://hcdtc.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://hcdtc.github.io/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://hcdtc.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://hcdtc.github.io/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://hcdtc.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://hcdtc.github.io/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/10-overview/0-team-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://hcdtc.github.io/en/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://hcdtc.github.io/zh/docs/"
+                />
+  </url>
+  
+</urlset>

@@ -1,0 +1,390 @@
+@import url("style.choerodon.css");
+@import url("footer.css");
+@import url("contribute.css");
+@import url("event.css");
+
+/* 社区页面 */
+.community .talk-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.26rem;
+    color: #333333;
+}
+
+.community .talk-text p {
+    margin: 0;
+    font-size: 0.22rem;
+    font-weight: 400;
+}
+
+.community .talk-text p + p {
+    margin-top: 0.15rem;
+}
+
+.community .social-detail {
+    margin: 0.8rem 2.85rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.community .social-detail .block{
+    width: 3.8rem;
+}
+
+.community .social-detail .block + .block{
+    margin-left: 0.4rem;
+}
+
+.community .social-detail img.follow,
+.community .social-detail img.discuss{
+    height: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.community .social-detail .title{
+    font-size: 0.18rem;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 0.1rem;
+}
+
+.community .social-detail .description{
+    font-size: 0.14rem;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
+.community .social-detail .content{
+    display: flex;
+    flex-direction: row;
+}
+
+.community .social-detail .content .code{
+    display: flex;
+    flex-direction: row;
+    will-change: transform;
+    transition: .25s;
+    transform: translateY(50px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: .25s;
+}
+
+.community .social-detail .content .code .dropdown-arrow{
+    width: 0.25rem;
+    height: 0.15rem;
+    background: #FFC627;
+    transform: rotate(45deg);
+    position: relative;
+    top: 0.45rem;
+    left: 0.18rem;
+}
+.community .social-detail .content .code .dropdown-code{
+    height: 1rem;
+    width: 1rem;
+    padding: 0.05rem;
+    background-color: #FFC627;
+    z-index: 1;
+}
+
+.community .social-detail a.type{
+    display: flex;
+    flex-direction: row;
+    color: #3371E3;
+    font-size: 0.16rem;
+}
+.community .social-detail a.type + a.type{
+    padding-top: 0.2rem;
+}
+
+.community .social-detail a.type:hover{
+    color:#FFC627;
+}
+.community .social-detail a.type i.iconfont {
+    margin-right: 0.1rem;
+}
+.community .social-detail a.type .name{
+    text-align: left;
+}
+.forum {
+    background-image: linear-gradient(-1deg, #003DAC 0%, #3371E3 100%);
+    width: 100%;
+    height: 5.7rem;
+    margin-bottom: 2.03rem;
+}
+.forum-background{
+    background:url(../img/socials/forum.svg) no-repeat center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forum-title{
+    margin: 0.4rem 0 0.2rem 0;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.forum-description{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.forum-data{
+    width: 10.6rem;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0.54rem;
+    box-shadow: 0 0 0.2rem 0;
+    border-radius: 0.06rem;
+    background: #FFFFFF;
+}
+
+.forum-button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    color: #3670E3;
+    background: #FFFFFF;
+    border-radius: 0.06rem 0.06rem 0 0;
+    box-shadow: 0 0 0.1rem 0 #909090;
+    justify-content: space-between;
+}
+.community .btn{
+    margin-left: 0.3rem;
+    color: #3670E3;
+}
+.community .btn:hover{
+    color: #3670E3;
+}
+
+.community .choose{
+    background: #3670E3;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+.community .choose:hover{
+    color: #FFFFFF;
+}
+.forum-table{
+    width: 100%;
+    border-radius: 0 0 0.06rem 0.06rem;
+    padding-top: 0.15rem;
+}
+
+.forum-table table{
+    width: 100%;
+}
+.forum-table table tr {
+    display: block;
+    border-bottom: 0.01rem solid #ddd;
+    margin: 0 0.25rem;
+}
+.forum-table table tr:last-child{
+    border-bottom: none;
+}
+
+.forum-table td {
+    padding: 0;
+    font-size: 0.14rem;
+    color: rgba(0,0,0,0.65);
+    height: 0.45rem;
+}
+
+.forum-table .td1 {
+    width: 1.5rem;
+    text-align: left;
+}
+.forum-table .td2 {
+    text-align: left;
+    width: 5.5rem;
+}
+.forum-table .td3 {
+    width: 1rem;
+    text-align: center;
+}
+.forum-table .td4 {
+    width: 1rem;
+    text-align: center;
+}
+.forum-table .td5 {
+    width: 1.2rem;
+    text-align: right;
+}
+/* live */
+.live{
+    background: #F7F7F7;
+}
+
+.live > .head{
+    font-size: 0.24rem;
+    color: rgba(0,0,0,0.87);
+    line-height: 1;
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+.live > .content{
+    margin: 1.3rem 1.2rem 1rem 1.2rem;
+}
+
+.live > .content > .row + .row{
+    margin-top: 1.5rem;
+}
+
+.live > .content .card{
+    width: 3.53rem;
+    /* height: 1.72rem; */
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.live > .content .card + .card{
+    margin-left: 0.71rem;
+}
+
+.live > .content .card.blue-card{
+    background:url(/img/socials/live/bg-blue.png) no-repeat;
+    background-size: cover;
+}
+
+.live > .content .card.yellow-card{
+    background:url(/img/socials/live/bg-yellow.png) no-repeat;
+    background-size: cover;
+}
+
+.live > .content .card > .content{
+    padding: 0.4rem 0.1rem 0.15rem 0.1rem;
+    z-index: 1;
+    max-width: 2rem;
+}
+.live > .content .card .title{
+    font-size: 0.18rem;
+    color: #FFFFFF;
+}
+
+.live > .content .card .description{
+    margin-top: 0.1rem;
+    font-size: 0.14rem;
+    /* height:0.6rem; */
+    /* max-width: 1.5rem; */
+    color: #FFFFFF;
+    min-height: 0.71rem;
+}
+
+.live > .content .card .play{
+    color: #FFFFFF;
+    margin-top: 0.1rem;
+    /* height: 0.22rem; */
+    padding: 0 0.05rem;
+    background: #FF4D4F;
+    display: flex;
+    min-width: 0.84rem;
+    max-width: 6em;
+}
+
+.live > .content .card .play > i{
+    font-size: 0.12rem;
+    margin: auto;
+    text-align: center;
+}
+
+.live > .content .card .lecturer{
+    max-width: 1.8rem;
+    /* max-height: 0.8rem; */
+    background: #FFFFFF;
+    padding: 0.09rem 0.15rem;
+    margin-top: auto;
+    z-index: 1;
+    margin-bottom: 0.1rem;
+}
+.live > .content .card .lecturer > .position,
+.live > .content .card .lecturer > .name{
+    color: #000000;
+    font-weight: 500;
+}
+
+.live > .content .card > img{
+    /* height: 2.42rem; */
+    width: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* live end */
+
+@media (max-width: 767px) {
+    .community{
+        width: auto;
+        margin: 0 0.2rem;
+    }
+    .community .talk-text{
+        margin-top: 0.6rem;
+    }
+    .community .talk-text p {
+        line-height: 1.5;
+        font-size: 0.14rem;
+        color: rgba(0,0,0,0.65);
+    }
+    .community .talk-text p + p {
+        margin-top: 0;
+    }
+    .forum{
+        display: none;
+    }
+    .live{
+        background-color: #FFFFFF;
+        height: auto;
+    }
+    .live > .head{
+        padding-top: 0.3rem;
+    }
+    .live > .content{
+        margin: 1.2rem 0.1rem;
+    }
+    .live > .content .row{
+        margin: auto;
+    }
+    .live > .content .card{
+        width: 3.15rem;
+    }
+    .live > .content .card + .card{
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .live > .content > .row + .row{
+        margin-top: 1rem;
+    }
+    .live > .content .card > img{
+        width: 2rem;
+    }
+    .live > .content .card .lecturer{
+        width: 1.5rem;
+        padding-bottom: 0.1rem;
+        max-height: 0.75rem;
+    }
+    .live > .content .card .description{
+        min-height: 0.6rem;
+    }
+    .community .social-detail {
+        margin: 0.6rem 0.15rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .community .social-detail .block{
+        width: 100%;
+    }
+    .community .social-detail .block + .block{
+        margin: 0;
+        margin-top: 0.8rem;
+    }
+}

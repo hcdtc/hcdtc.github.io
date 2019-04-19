@@ -1,0 +1,64 @@
+baseurl = "//v0-15.choerodon.io/"
+title = "Choerodon | 开源多云应用平台"
+theme = "choerodon-document-theme"
+# themesDir = "../.."
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir= "true"
+prettyurls=true
+# Define the number of posts per page
+paginate = 5
+# Open highlight
+#pygmentsCodeFences = true
+
+[languages]
+    [languages.en]
+        languageName = "English"
+    [languages.zh]
+        languageName = "中文"
+
+[menu]
+# Main menu
+[[languages.en.menu.main]]
+    name = "Docs"
+    url  = "/en/docs/"
+    weight = 1
+
+[[languages.en.menu.main]]
+    name = "Github"
+    url  = "https://github.com/hcdtc/hcdtc.github.io.git"
+    weight = 2
+    post= true
+
+[[languages.en.menu.main]]
+    name = "Home"
+    url  = "/"
+    weight = 3
+
+[[languages.zh.menu.main]]
+    name = "文档"
+    url  = "/zh/docs/"
+    weight = 1
+
+[[languages.zh.menu.main]]
+    name = "GITHUB"
+    url  = "https://github.com/hcdtc/hcdtc.github.io.git"
+    weight = 2
+    post= true
+    identifier = "github"
+
+[[languages.zh.menu.main]]
+    name = "返回首页"
+    url  = "/"
+    weight = 3
+
+[params]
+    # viewMorePostLink = "/blog/"
+    author = "HCDTC"
+    # tryhref = "https://organization.choerodon.com.cn/#/organization/register-organization"
+    # ajaxhref = "https://share.choerodon.com.cn/topic/apply"
+    # praisenumber ="https://share.choerodon.com.cn/video/query"
+    defaultKeywords = ["devops"]
+    defaultDescription = ""
+    # Format dates with Go's time formatting
+    date_format = "2006-01-02"

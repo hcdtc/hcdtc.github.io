@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div>
+
+        <header>
+        <link href="/css/home.css" rel="stylesheet">
+          {{ partial "nav.html" . }}
+
+          {{ partial "carousel.html" . }}
+
+        </header>
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-sm-6 col-sm-offset-3" class="error-page">
+
+                    <div class="box">
+
+                        <h3>{{ i18n "we are sorry" }}</h3>
+                        <h4 class="text-muted">{{ i18n "page not found" }}</h4>
+
+                        <p class="buttons"><a href="/zh/" class="btn btn-template-main">{{ i18n "go to homepage" }}</a>
+                        </p>
+                    </div>
+
+
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+{{ partial "scripts.html" . }}
+{{ range .Site.Data.static.home.js }}
+    <script src="{{ . }}"></script>
+{{ end }}
+  </body>
+</html>

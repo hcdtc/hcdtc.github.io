@@ -1,0 +1,10 @@
+weight: 3
+title: "Choerodon released version 0.15"
+minTitle: "v0.15 released"
+description: "On April 1st, 2019, Choerodon was launched in 0.15 version. This update has added many new functions such as problem management advanced search, active sprint work restriction, automatic deployment, organization layer application page, etc. Welcome to update the experience."
+minDescription: "April 1, 2019，Choerodon released v0.15"
+button: "Learn more"
+img: "/img/socials/event/version.svg"
+homeImg: "/img/home/notice/version.svg"
+href: "/blog/v0.15-version/"
+language: "en"
