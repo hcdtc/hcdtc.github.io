@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta name="baidu-site-verification" content="NQB7kASlT6" />
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>BooleanUtils工具类</title>
+  
+  
+  <meta name="keywords" content="devops">	
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  
+  <script src="/js/rem.js"></script>
+  
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-144.png">
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8b9485b9f982efd2c649f426a25b1fe8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+
+    <link href="/css/docs.css" rel="stylesheet">
+    <header id="header">
+        <div class='navbar  top-white-nav  top-nav' role="navigation" id="navbar">
+    
+        <div class="navbar-left-buttons">
+            <button type="button" class="navbar-toggle btn-template-main">
+                <i class="iconfont">&#xe78e;</i>
+            </button>
+        </div>
+    
+    
+    
+
+    <div class="navbar-buttons">
+        <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation-mobile">
+            <i class="iconfont">&#xe790;</i>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+            
+        </ul>
+    </div>
+    <div class="global-language">
+        <a>ZH</a>
+        <ul class="language-list">
+            
+            <li><a href="/zh/">中文</a></li>
+            
+            <li><a href="/en/">English</a></li>
+            
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+<div class="navbar-collapse-bg none" id="navbar-collapse-bg">
+    <div class="navbar-collapse collapse" id="navigation-mobile">
+        
+            
+        
+            
+        
+            
+        
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+        </ul>
+        
+    </div>
+
+</div>
+
+
+    </header>
+    <body>
+        <div id="content" class="docs">
+            
+            
+            <div class="docs-menu">
+            <div class="docs-search"><div class="sidebar-menu search">
+    <input id="search-input" class="search-input" type="text" placeholder='请搜索关键字'>
+    <button id="search" class="search-button" type="submit">搜索</button>
+</div></div>
+                
+                <li data-nav-id="/zh/docs/" class="dd-item parent haschildren">
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/10-overview/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/10-overview/">总体介绍</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/10-overview/0-team-overview/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/10-overview/0-team-overview/">
+                        团队介绍
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/20-development-specification/">开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/">基础开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/1-branch-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/1-branch-management/">分支管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/2-version-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/2-version-management/">版本管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/3-name-convention/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/3-name-convention/">命名规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/">前端开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/">开发环境搭建</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/">
+                        开发环境搭建(Mac)
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/">
+                        开发环境搭建(Windows)
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/">编码规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/3-back-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/3-back-end/">后端开发规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/30-development-manual/">开发手册</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/1-front-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/1-front-end/">前端开发手册</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/">后端开发手册</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/">开发框架解析</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/">Spring系列</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/">
+                        Spring Boot简介
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/">
+                        Spring Boot自动化配置
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/">
+                        Spring Boot配置类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/" class="dd-item">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/">MyBatis系列</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/">开发工具类</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/">JDK工具类</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/">
+                        Optional类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/">common-lang3</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/">
+                        StringUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/">
+                        ArrayUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/">
+                        DateUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/">
+                        DateFormatUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/">
+                        ClassUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/">
+                        MethodUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/">
+                        FieldUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/">
+                        ObjectUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/" class="dd-item active">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/">
+                        BooleanUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/">
+                        RandomUtils工具类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/3-dev-tools/">开发工具指引</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/1-git/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/1-git/">
+                        Git使用指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/2-idea/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/2-idea/">
+                        Idea使用指南
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/80-team-doc/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/80-team-doc/">团队文档</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/80-team-doc/1-doc-quickstart/">文档指南</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/">
+                        文档贡献指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/">
+                        Hugo框架指引
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/">
+                        MarkDown速查手册
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/99-code-review/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/99-code-review/">代码复查</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/99-code-review/1-check-list/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/99-code-review/1-check-list/">
+                        代码复查清单
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            
+            
+            </div>
+            
+            <div class='docs-post content-post ' id="content-post" >
+                
+
+<h1 id="booleanutils-工具类使用">BooleanUtils 工具类使用</h1>
+
+<blockquote>
+<p>工具类：<code>org.apache.commons.lang3.BooleanUtils</code><br />
+版本：<code>commons-lang3:3.7</code><br />
+地址：<a href="https://commons.apache.org/proper/commons-lang/javadocs/api-release/index.html" target="_blank">BooleanUtils API</a><br />
+说明：<code>BooleanUtils</code> 用来操作基础布尔或者布尔对象。可以优雅地处理空输入，而不会抛出异常。</p>
+</blockquote>
+
+<h2 id="概览">概览</h2>
+
+<p><img src="/img/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/BooleanUtils.jpg" alt="BooleanUtils 类图" /></p>
+
+<h2 id="布尔工具类">布尔工具类</h2>
+
+<h3 id="比较两个布尔值并返回int类型-如果x-y返回0-x-y-返回小于-0-x-y-返回大于0">比较两个布尔值并返回int类型 如果x == y返回0， !x &amp;&amp; y 返回小于 0 ，x &amp;&amp; !y 返回大于0</h3>
+
+<h4 id="compare-boolean-x-boolean-y">compare(boolean x, boolean y)</h4>
+
+<h4 id="isfalse-boolean-bool-是否是假并返回boolean">isFalse(Boolean bool) 是否是假并返回boolean</h4>
+
+<h4 id="istrue-boolean-bool-是否是真并返回boolean">isTrue(Boolean bool) 是否是真并返回boolean</h4>
+
+<h4 id="isfalse-boolean-bool-negate-boolean-bool-逻辑非">isFalse(Boolean bool) negate(Boolean bool) 逻辑非</h4>
+
+<pre><code class="language-java">BooleanUtils.negate(Boolean.TRUE)  = Boolean.FALSE;
+BooleanUtils.negate(Boolean.FALSE) = Boolean.TRUE;
+BooleanUtils.negate(null)          = null;
+</code></pre>
+
+<h3 id="逻辑与">逻辑与</h3>
+
+<h4 id="and-boolean-array">and(boolean&hellip; array)</h4>
+
+<pre><code class="language-java">BooleanUtils.and(true, true)         = true
+BooleanUtils.and(false, false)       = false
+BooleanUtils.and(true, false)        = false
+BooleanUtils.and(true, true, false)  = false
+BooleanUtils.and(true, true, true)   = true
+
+</code></pre>
+
+<h3 id="逻辑或">逻辑或</h3>
+
+<h4 id="or-boolean-array">or(boolean&hellip; array)</h4>
+
+<pre><code class="language-java">BooleanUtils.or(true, true)          = true
+BooleanUtils.or(false, false)        = false
+BooleanUtils.or(true, false)         = true
+BooleanUtils.or(true, true, false)   = true
+BooleanUtils.or(true, true, true)    = true
+BooleanUtils.or(false, false, false) = false
+</code></pre>
+
+<h3 id="异或">异或</h3>
+
+<h4 id="xor-boolean-array">xor(boolean&hellip; array)</h4>
+
+<pre><code class="language-java">BooleanUtils.xor(true, true)   = false
+BooleanUtils.xor(false, false) = false
+BooleanUtils.xor(true, false)  = true
+
+</code></pre>
+
+<h3 id="将对象类型转换为基本数据类型并返回">将对象类型转换为基本数据类型并返回</h3>
+
+<h4 id="toboolean-boolean-bool">toBoolean(Boolean bool)</h4>
+
+<pre><code class="language-java">BooleanUtils.toBoolean(Boolean.TRUE)  = true
+BooleanUtils.toBoolean(Boolean.FALSE) = false
+BooleanUtils.toBoolean(null)          = false
+
+</code></pre>
+
+<h3 id="将int类型转换为boolean类型并返回">将int类型转换为boolean类型并返回</h3>
+
+<h4 id="toboolean-int-value">toBoolean(int value)</h4>
+
+<pre><code class="language-java">BooleanUtils.toBoolean(0) = false
+BooleanUtils.toBoolean(1) = true
+BooleanUtils.toBoolean(2) = true
+
+</code></pre>
+
+<h3 id="将string类型转换为boolean类型并返回">将string类型转换为boolean类型并返回</h3>
+
+<h4 id="toboolean-string-str">toBoolean(String str)</h4>
+
+<pre><code class="language-java">BooleanUtils.toBoolean(null)    = false
+BooleanUtils.toBoolean(&quot;true&quot;)  = true
+BooleanUtils.toBoolean(&quot;TRUE&quot;)  = true
+BooleanUtils.toBoolean(&quot;tRUe&quot;)  = true
+BooleanUtils.toBoolean(&quot;on&quot;)    = true
+BooleanUtils.toBoolean(&quot;yes&quot;)   = true
+BooleanUtils.toBoolean(&quot;false&quot;) = false
+BooleanUtils.toBoolean(&quot;x gti&quot;) = false
+BooleanUtils.toBooleanObject(&quot;y&quot;) = true
+BooleanUtils.toBooleanObject(&quot;n&quot;) = false
+BooleanUtils.toBooleanObject(&quot;t&quot;) = true
+BooleanUtils.toBooleanObject(&quot;f&quot;) = false
+
+</code></pre>
+
+<h3 id="将boolean类型数据转换为int类型并返回">将boolean类型数据转换为int类型并返回</h3>
+
+<h5 id="tointeger-boolean-bool">toInteger(boolean bool)</h5>
+
+<pre><code class="language-java">BooleanUtils.toInteger(true)  = 1
+BooleanUtils.toInteger(false) = 0
+
+</code></pre>
+
+<h3 id="将boolean类型数据转换为string类型-on-or-off-并返回">将boolean类型数据转换为String类型&rsquo;on&rsquo; or &lsquo;off&rsquo;并返回</h3>
+
+<h4 id="tostringonoff-boolean-bool">toStringOnOff(boolean bool)</h4>
+
+<pre><code class="language-java">BooBooleanUtils.toStringOnOff(true)   = &quot;on&quot;
+   BooleanUtils.toStringOnOff(false)  = &quot;off&quot;
+
+
+</code></pre>
+
+<h3 id="将boolean类型数据转换为string类型-true-or-false-并返回">将boolean类型数据转换为String类型&rdquo;true&rsquo; or &lsquo;false&rsquo;并返回</h3>
+
+<h4 id="tostringtruefalse-boolean-bool">toStringTrueFalse(Boolean bool)</h4>
+
+<pre><code class="language-java">BooleanUtils.toStringTrueFalse(true)   = &quot;true&quot;
+BooleanUtils.toStringTrueFalse(false)  = &quot;false&quot;
+
+
+
+</code></pre>
+
+<h3 id="将boolean类型数据转换为string类型-yes-or-no-并返回">将boolean类型数据转换为String类型&rsquo;yes&rsquo; or &lsquo;no&rsquo;并返回</h3>
+
+<h4 id="tostringyesno-boolean-bool">toStringYesNo(boolean bool)</h4>
+
+<pre><code class="language-java">BooleanUtils.toStringYesNo(true)   = &quot;yes&quot;
+BooleanUtils.toStringYesNo(false)  = &quot;no&quot;
+</code></pre>
+
+            </div>
+            <div class="article-menu">
+                
+                <ul id="article-nav-ul">
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div style="clear: both;"></div>
+
+        <footer id="footer" class="footer">
+    <nav class="footer-nav">
+        
+            
+                <a href="/zh/docs/">文档</a>
+            
+        
+            
+                
+        
+            
+                <a href="/">返回首页</a>
+            
+        
+    </nav>
+    <div class="social">
+        <a href="https://github.com/choerodon/" target="_blank" class="social-single"><i class="iconfont icon-github-footer"></i></a>
+        <i class="iconfont icon-wechat-footer social-single"></i>
+        <div class="wechat-hover load-img">
+            <div data-loader='circle'></div>
+            <img data-src="/img/footer/wechat-code.jpg"/>
+        </div>
+        
+        <a href="http://forum.choerodon.io/" target="_blank" class="social-single"><i class="iconfont icon-forum-footer"></i></a>
+    </div>
+    <div class="copy-right" class="center">
+        Copyright &copy; The Choerodon Author. All rights reserved.
+    </div>
+    <div id="big-img" class="black-big-img">
+        <img src="" alt="">
+    </div>
+</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        
+        
+    </body>
+
+    <script src="/js/front.js"></script>
+
+    <script src="/js/doc-search.js"></script>
+
+    <script src="/js/docs.js"></script>
+
+    <script src="/js/player.js"></script>
+
+</html>

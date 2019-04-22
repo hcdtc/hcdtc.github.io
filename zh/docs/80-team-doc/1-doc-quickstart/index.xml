@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文档指南 on 汉得中台成都远程中心 | 中台远程交付团队</title>
+    <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/</link>
+    <description>Recent content in 文档指南 on 汉得中台成都远程中心 | 中台远程交付团队</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>文档贡献指南</title>
+      <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/</guid>
+      <description> 文档贡献流程 团队成员可以通过Fork-&amp;gt;Pull Request的方式提供文档。 文档库概览  文档库：https://github.com/hcdtc/hcdtc-website.git 发布地址：https://hcdtc.github.io  文档撰写参考  Hugo框架指引 MarkDown速查手册  </description>
+    </item>
+    
+    <item>
+      <title>Hugo框架指引</title>
+      <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/</guid>
+      <description>Hugo 框架指引 Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+Quick start Hugo的安装使用便捷简单，参考官网Hugo quick start。以下主要介绍其基本概念和本项目开发流程。
+目录结构 ├── archetypes ├── config.toml ├── content │ └── docs │ └── xx-doc │ └── x-doc ├── data ├── layouts ├── static └── themes  archetypes
+在通过hugo new xxx 创建内容页面的时候，默认情况下hugo会创建date、title等front matter，可以通过在archetypes目录下创建文件，设置自定义的front matter。
+config.toml
+所有的hugo站点都有一个全局配置文件，用来配置整个站点的信息，hugo默认提供了跟多配置指令。
+content
+站点下所有的内容页面，也就是我们创建的md文件都在这个content目录下面。
+data
+data目录用来存储网站用到一些配置、数据文件。文件类型可以是yaml|toml|json等格式。
+layouts
+存放用来渲染content目录下面内容的模版文件，模版.html格式结尾，layouts可以同时存储在项目目录和themes//layouts目录下。
+static
+用来存储图片、css、js等静态资源文件。
+themes
+用来存储主题，主题可以方便的帮助我们快速建立站点，也可以方便的切换网站的风格样式。
+public
+hugo编译后生成网站的所有文件都存储在这里面，把这个目录放到任意web服务器就可以发布网站成功。
+Hugo 常用命令  hugo init path：在path路径下初始化一个hugo博客目录 hugo server &amp;ndash;buildDrafts：hugo server如果没有带参数，默认在当前目录寻找config.toml，如果没有config.toml，命令中就需要带很多参数。&amp;ndash;buildDrafts意为“编译草稿（draft: true的Markdown文件）” hugo &amp;ndash;buildDrafts：生成可发布的静态html。如果没有指定路径，默认在当前路径下新建public。如果在config.toml中指定了publicdir参数，则默认到该路径下，注意路径的斜杠问题。  部署 假设你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：coderzh.</description>
+    </item>
+    
+    <item>
+      <title>MarkDown速查手册</title>
+      <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/</guid>
+      <description>Markdown 语法说明 概述 Markdown 的目标是实现「易读易写」。
+可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。
+总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像*强调*。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。
+兼容 HTML Markdown 语法的目标是：成为一种适用于网络的*书写*语言。
+Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想*不是*要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种*发布*的格式，Markdown 是一种*书写*的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。
+不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
+要制约的只有一些 HTML 区块元素――比如 &amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;pre&amp;gt;、&amp;lt;p&amp;gt; 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &amp;lt;p&amp;gt; 标签。
+例子如下，在 Markdown 文件里加上一段 HTML 表格：
+这是一个普通段落。 &amp;lt;table&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/table&amp;gt; 这是另一个普通段落。  请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的*强调*会没有效果。</description>
+    </item>
+    
+  </channel>
+</rss>

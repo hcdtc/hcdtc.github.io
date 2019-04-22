@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring系列 on 汉得中台成都远程中心 | 中台远程交付团队</title>
+    <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/</link>
+    <description>Recent content in Spring系列 on 汉得中台成都远程中心 | 中台远程交付团队</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot简介</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/</guid>
+      <description> Spring Boot优势  开箱即用的Starter组件，简化开发 约定优于配置，JavaConfig配置应用等，易于上手 整合开源的运维平台，打造持续交付流水线，工具链齐全，易于管理和运维，利于微服务的交付运维  </description>
+    </item>
+    
+    <item>
+      <title>Spring Boot自动化配置</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/</guid>
+      <description>探究@SpringBootApplication注解 通过查看源码可知，它是一个复合注解，主要由如下三个注解组成：
+ @SpringBootConfiguration：复合注解，由@Configuration组成，任何一个标注了@Configuration的Java类定义，都是一个JavaConfig配置类。
+ @EnableAutoConfiguration：与其他@Enable开头的注解(例如，@EnableScheduling、@EnableCaching、@EnableMBeanExport等)功能一样，借助@Import的支持，收集和注册特定场景相关的Bean定义。例如： @EnableScheduling是通过@Import将Spring调度框架相关的Bean定义都加载到Spring IoC容器。 @EnableMBeanExport是通过@Import将JMX相关的Bean定义加载到Spring IoC容器。 而@EnableAutoConfiguration则是借助@Import的帮助，将所有符合自动配置条件的Bean定义加载到Spring IoC容器。
+重点解析：从classpath中搜寻所有META-INF/spring.factories配置文件，并将其中org.spring.framework.boot.autoconfigure.EnableAutoConfiguration对应的配置项通过反射（Java Reflection）机制实例化为对应的标注了@Configuration的JavaConfig形式的IoC容器配置类，然后汇总为一个并加载到IoC容器。  @ComponentScan
+  package org.springframework.boot.autoconfigure; import ...; @Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME) @Documented @Inherited @SpringBootConfiguration @EnableAutoConfiguration @ComponentScan( excludeFilters = { @Filter( type = FilterType.CUSTOM, classes = {TypeExcludeFilter.class} ), @Filter( type = FilterType.CUSTOM, classes = {AutoConfigurationExcludeFilter.class} )} ) public @interface SpringBootApplication { @AliasFor( annotation = EnableAutoConfiguration.class, attribute = &amp;quot;exclude&amp;quot; ) Class&amp;lt;?&amp;gt;[] exclude() default {}; @AliasFor( annotation = EnableAutoConfiguration.class, attribute = &amp;quot;excludeName&amp;quot; ) String[] excludeName() default {}; @AliasFor( annotation = ComponentScan.</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot配置类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/</guid>
+      <description>Spring Boot配置类 @Configuration/@ConditionXxx等</description>
+    </item>
+    
+  </channel>
+</rss>

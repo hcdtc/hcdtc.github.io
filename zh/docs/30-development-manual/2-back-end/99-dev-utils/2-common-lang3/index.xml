@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>common-lang3 on 汉得中台成都远程中心 | 中台远程交付团队</title>
+    <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/</link>
+    <description>Recent content in common-lang3 on 汉得中台成都远程中心 | 中台远程交付团队</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>StringUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/</guid>
+      <description>StringUtils 工具类使用  工具类：org.apache.commons.lang3.StringUtils
+版本：commons-lang3:3.7
+地址：StringUtils API
+说明：StringUtils 是工作中使用最频繁的一个工具类，提供了丰富的字符串操作方法，如替换、判等、截取、计数等，每个类型都重载了很多方法，且不会抛出空指针异常。
+ 概览 大部分方法都提供了很多重载方法，比如不区分大小写xxIgnoreCase、匹配任何xxAny、还有参数类型不同、参数个数不同的重载等，能适应绝大多数业务场景的需求。
+静态常量 StringUtils 提供了最常用的常量如下，使用定义的常量能让我们的代码更清晰。
+花式截取字符串 @Test public void testSubstring() { // 最基本的截取 System.out.println( StringUtils.substring(&amp;quot;abcde&amp;quot;, 1, 2) ); // b // 截取前半部分 System.out.println( StringUtils.substringBefore(&amp;quot;role/site/admin-(1.site.1)&amp;quot;, &amp;quot;-(&amp;quot;) ); // role/site/admin // 截取后半部分 System.out.println( StringUtils.substringAfter(&amp;quot;role/site/admin-(1.site.1)&amp;quot;, &amp;quot;-&amp;quot;) ); // (1.site.1) // 截取之间的 System.out.println( StringUtils.substringBetween(&amp;quot;role/site/admin-(1.site.1)&amp;quot;, &amp;quot;(&amp;quot;, &amp;quot;)&amp;quot;) ); // 1.site.1 // 截取左边的部分 System.out.println( StringUtils.left(&amp;quot;aabbcc&amp;quot;, 4) ); // aabb // 截取右边的部分 System.out.println( StringUtils.right(&amp;quot;aabbcc&amp;quot;, 4) ); // bbcc // 截取中间部分 System.</description>
+    </item>
+    
+    <item>
+      <title>ArrayUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/</guid>
+      <description>ArrayUtils 工具类使用  工具类：org.apache.commons.lang3.ArrayUtils
+版本：commons-lang3:3.7
+地址：ArrayUtils API
+说明：ArrayUtils 是专门用来处理数组的工具类，每种类型的方法都包括8中原生数据类型和包装类型，以及Object、Class、String、Character等。可以优雅地处理空输入，而不会抛出异常，因此不必再判断一次是否为null。
+ 概览 空数组常量 ArrayUtils 工具类一开始提供了空且不可变的数组常量，我们可以在需要返回空数组的地方使用这些已经定义好的数组，避免创建引用。
+索引元素位置 IndexOf @Test public void testIndexOf () { String[] arr = new String[]{&amp;quot;aa&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;}; System.out.println(ArrayUtils.indexOf(arr, &amp;quot;bb&amp;quot;)); // 1 正序查找第一个匹配的元素 System.out.println(ArrayUtils.indexOf(arr, &amp;quot;mm&amp;quot;)); // -1 找不到元素返回 -1 System.out.println(ArrayUtils.indexOf(arr, &amp;quot;bb&amp;quot;, 2)); // 3 第三个参数指定起始位置 System.out.println(ArrayUtils.lastIndexOf(arr, &amp;quot;bb&amp;quot;)); // 3 倒序查找第一个匹配的元素 System.out.println(ArrayUtils.lastIndexOf(arr, &amp;quot;mm&amp;quot;)); // -1 找不到元素返回 -1 System.out.println(ArrayUtils.lastIndexOf(arr, &amp;quot;bb&amp;quot;, 2)); // 1 第三个参数指定起始位置，然后倒序查找匹配的元素 }  判空 isEmpty @Test public void testEmpty() { String[] arr = new String[]{&amp;quot;aa&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;}; String[] arr2 = new String[]{}; String[] arr3 = null; System.</description>
+    </item>
+    
+    <item>
+      <title>DateUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/</guid>
+      <description>DateUtils 工具类使用  工具类：org.apache.commons.lang3.time.DateUtils
+版本：commons-lang3:3.7 地址：DateUtils API
+说明：DateUtils 是专门用来处日期工具类,提供String日期转换date,日期的设置,截取,比较,四舍五入以及当前时区获取,设置,等方法
+ 概览 DateUtils常量 DateUtils 定义了年月日时分秒常量 , 以毫秒为单位,年月日时分秒值
+String转Date 参数 arg0 : 日期字符串 String , arg1: 特定的地理，政治和文化地区.可以传null, arg3 : 日期格式.与arg0格式要保持一致String
+@Test public void testStringConvertDate() throws ParseException { //该方法对日期和时间的是宽松的(如 1996 年 2 月 42 日)将被视为等同于 1996 年 2 月 1 日后的第 41 天 Date date1 = DateUtils.parseDate(&amp;quot;20171012 14:30:12&amp;quot;, Locale.TRADITIONAL_CHINESE, &amp;quot;yyyyMMdd hh:mm:ss&amp;quot;); //该方法对日期和时间的解释是严格的 (如 1996 年 2 月 42 日)将会报错 Date date2 = DateUtils.</description>
+    </item>
+    
+    <item>
+      <title>DateFormatUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/</guid>
+      <description>DateFormatUtils 工具类使用  工具类：org.apache.commons.lang3.time.DateFormatUtils
+版本：commons-lang3:3.7
+地址：DateFormatUtils API
+说明：DateFormatUtils 是专门用来处理日期格式转换的工具类，支持 milliseconds、Date、Calendar 转换为自定义的日期格式。
+概述  预定义的日期格式 public static final FastDateFormat ISO_8601_EXTENDED_DATETIME_FORMAT = FastDateFormat.getInstance(&amp;quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_DATETIME_TIME_ZONE_FORMAT = FastDateFormat.getInstance(&amp;quot;yyyy-MM-dd&#39;T&#39;HH:mm:ssZZ&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_DATE_FORMAT = FastDateFormat.getInstance(&amp;quot;yyyy-MM-dd&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_TIME_FORMAT = FastDateFormat.getInstance(&amp;quot;HH:mm:ss&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_TIME_TIME_ZONE_FORMAT = FastDateFormat.getInstance(&amp;quot;HH:mm:ssZZ&amp;quot;); public static final FastDateFormat SMTP_DATETIME_FORMAT = FastDateFormat.getInstance(&amp;quot;EEE, dd MMM yyyy HH:mm:ss Z&amp;quot;, Locale.US);  使用 DateFormatUtils进行日期格式转换 //把毫秒转为定义的格式化日期类型 String format = DateFormatUtils.</description>
+    </item>
+    
+    <item>
+      <title>ClassUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/</guid>
+      <description>ClassUtils 工具类使用  工具类：org.apache.commons.lang3.ClassUtils
+版本：commons-lang3:3.7
+地址：ClassUtils API
+说明：ClassUtils 是关于类级别相关的工具类，具有对类的简称getShortClassName()或getSimpleName()、获取所在包名称getPackageName()、获取所有父亲类集合getAllSuperclasses()、获取所有接口getAllInterfaces()、字符串集合到类集合转换convertClassNamesToClasses()、是否原始类判断isPrimitiveOrWrapper()、是否内部类判断isInnerClass()、通过类加载器获取class对象getClass()、获取Public方法getPublicMethod()、获取依赖集hierarchy()等操作方法
+ 概览 获取包名 getPackageName(Class&amp;lt;?&amp;gt; cls)
+//获取包名 String packageName = ClassUtils.getPackageName(String.class); System.out.println(packageName); // java.lang //第一个参数为空,默认返回第二个参数 String packageName2 = ClassUtils.getPackageName(null, &amp;quot;the object is null&amp;quot;); System.out.println(packageName2); // the object is null //传入字符串 String packageName3 = ClassUtils.getPackageName(&amp;quot;java.lang.String&amp;quot;); System.out.println(packageName3); // java.lang //获取规范名 String packageName4 = ClassUtils.getPackageCanonicalName(String.class); System.out.println(packageName4); // java.lang  获取类名 getShortCanonicalName(Class&amp;lt;?&amp;gt; cls)
+getShortClassName(Class&amp;lt;?&amp;gt; cls)
+getSimpleName(Class&amp;lt;?&amp;gt; cls)
+//获取simpleName String simpleName1 = ClassUtils.getSimpleName(String.class); System.out.println(simpleName1); // = String //获取simpleName String simpleName2 = ClassUtils.</description>
+    </item>
+    
+    <item>
+      <title>MethodUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/</guid>
+      <description>MethodUtils工具类使用  类路径：org.apache.commons.lang3.reflect.MethodUtils 版本：commons-lang3:3.7  Java doc：MethodUtils API 说明：MethodUtils是一个通过反射使用或者获取方法的工具类，它提供了各种获取以及使用方法的方法，甚至可以突破Java作用域的限制。
+ MethodUtils类图 构造方法-&amp;gt;MethodUtils  说明：该工具类虽然提供了构造方法，但该构造方法不应该出现在标准程序中。提供公共构造方法是为了允许在有需要的时候提供JavaBean实例。  public MethodUtils()  反射执行类方法-&amp;gt;invokeMethod  反射执行一个无参的方法  /** * @param object 方法名所在的对象 * @param methodName 方法名 * @return 方法反射结果返回值 */ public static Object invokeMethod(final Object object, final String methodName);   根据forceAccess参数判断反射执行时是否需要考虑Java作用域问题  /** * @param object 方法名所在的对象 * @param forceAccess true为反射时无视Java方法作用域，false则相反 * @param methodName 方法名 * @return 方法反射结果返回值 */ public static Object invokeMethod(final Object object, final boolean forceAccess, final String methodName);   反射执行一个有参的方法  /** * @param object 方法名所在的对象 * @param methodName 方法名 * @param args 反射需要传入的参数，支持多个参数 * @return 方法反射结果返回值 */ public static Object invokeMethod(final Object object, final String methodName,Object.</description>
+    </item>
+    
+    <item>
+      <title>FieldUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/</guid>
+      <description>FieldUtils 工具类使用  类路径：org.apache.commons.lang3.reflect.FieldUtils 版本：commons-lang3:3.7  Java doc：FieldUtils API 说明：FieldUtils是一个通过反射处理字段的实用工具类，它提供的方法超出了普通编码的范围，可以修改不应该修改的字段，应该谨慎使用该工具类
+ FieldUtils 类图 构造方法  说明：该工具类虽然提供了构造方法，但该构造方法不应该出现在标准程序中。提供公共构造方法是为了允许在有需要的时候提供JavaBean实例。  FieldUtils()  获取类字段  返回指定类以及父类(如果有)中的所有字段，以数组格式返回  /** * * @param cls 查询的类，不允许为空 * @return 返回一个字段数组(可能为空). * @throws IllegalArgumentException 类为null时抛出无效参数异常 */ static Field[] getAllFields(Class&amp;lt;?&amp;gt; cls)   返回指定类以及父类(如果有)中的所有字段，以List格式返回  /** * * @param cls 查询的类，不允许为空 * @return 返回一个字段列表(可能为空). * @throws IllegalArgumentException 类为null时抛出无效参数异常 */ static List&amp;lt;Field&amp;gt; getAllFieldsList(Class&amp;lt;?&amp;gt; cls)   通过字段名称获取指定类中一个可访问范围内的字段  /** * * @param cls 查询的类，不允许为空 * @param fieldName 字段名称 * @return 字段对象 * @throws IllegalArgumentException 类为null时抛出无效参数异常 */ static Field getDeclaredField(Class&amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>ObjectUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/</guid>
+      <description>ObjectUtils 工具类使用  工具类：org.apache.commons.lang3.ObjectUtils
+版本：commons-lang3:3.7
+地址：ObjectUtils API
+说明：ObjectUtils 是处理对象常用操作的工具类，包含默认值、hash/equals(已废弃)、Object原生toString()、toString(已废弃)、比较、求最常出现值、克隆和内联常量编译优化几部分。
+ 概览 NULL常量 此常量为ObjectUtils内部类org.apache.commons.lang3.ObjectUtils.Null的一个实例，可以用来做Hashtable的键，用来代替不被接受的null。
+默认值 defaultIfNull(T, T) 如果传递的对象为null，则返回默认值。
+   表达式 值     ObjectUtils.defaultIfNull(null,null) null   ObjectUtils.defaultIfNull(null,&amp;ldquo;&amp;rdquo;) &amp;rdquo;&amp;rdquo;   ObjectUtils.defaultIfNull(null,&amp;ldquo;zz&amp;rdquo;) &amp;ldquo;zz&amp;rdquo;   ObjectUtils.defaultIfNull(&amp;ldquo;abc&amp;rdquo;,*) &amp;ldquo;abc&amp;rdquo;   ObjectUtils.defaultIfNull(Boolean.TRUE,*) Boolean.TRUE    firstNonNull(T&amp;hellip;) 返回数组中非空的第一个值。 如果所有值都为null或数组为null或为空，则返回null。
+   表达式 值     ObjectUtils.firstNonNull(null,null) null   ObjectUtils.firstNonNull(null,&amp;ldquo;&amp;rdquo;) &amp;rdquo;&amp;rdquo;   ObjectUtils.firstNonNull(null,null,&amp;ldquo;&amp;rdquo;) &amp;rdquo;&amp;rdquo;   ObjectUtils.</description>
+    </item>
+    
+    <item>
+      <title>BooleanUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/</guid>
+      <description>BooleanUtils 工具类使用  工具类：org.apache.commons.lang3.BooleanUtils
+版本：commons-lang3:3.7
+地址：BooleanUtils API
+说明：BooleanUtils 用来操作基础布尔或者布尔对象。可以优雅地处理空输入，而不会抛出异常。
+ 概览 布尔工具类 比较两个布尔值并返回int类型 如果x == y返回0， !x &amp;amp;&amp;amp; y 返回小于 0 ，x &amp;amp;&amp;amp; !y 返回大于0 compare(boolean x, boolean y) isFalse(Boolean bool) 是否是假并返回boolean isTrue(Boolean bool) 是否是真并返回boolean isFalse(Boolean bool) negate(Boolean bool) 逻辑非 BooleanUtils.negate(Boolean.TRUE) = Boolean.FALSE; BooleanUtils.negate(Boolean.FALSE) = Boolean.TRUE; BooleanUtils.negate(null) = null;  逻辑与 and(boolean&amp;hellip; array) BooleanUtils.and(true, true) = true BooleanUtils.and(false, false) = false BooleanUtils.and(true, false) = false BooleanUtils.and(true, true, false) = false BooleanUtils.</description>
+    </item>
+    
+    <item>
+      <title>RandomUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/</guid>
+      <description>RandomUtils工具使用  工具类：org.apache.commons.lang3.ArrayUtils
+版本：commons-lang3:3.7
+地址： RandomUtils API
+说明： RandomUtils是专门用来生成随机数的工具类，支持5种数字类型(byte、int、long、float、double)和布尔型(boolean)。
+ 概览 随机布尔值 boolean flag = RandomUtils.nextBoolean(); // true  随机字节数组  参数：返回数组的大小
+ byte[] number = RandomUtils.nextBytes(6); // B@5679c6c6  随机int型整数  1.返回一个0 - Integer.MAX_VALUE之间的随机整数
+ int number = RandomUtils.nextInt(); // 1599277713   2.返回一个在指定区间内的int型随机整数
+参数：startInclusive 最小值（包含，非负）
+参数：endExclusive 最大值（不包含）
+ int number = RandomUtils.nextInt(20, 60); // 42  随机long型整数  1.返回一个0 - Long.MAX_VALUE之间的随机整数
+ long number = RandomUtils.nextLong(); // 2057158075517831168   2.</description>
+    </item>
+    
+  </channel>
+</rss>

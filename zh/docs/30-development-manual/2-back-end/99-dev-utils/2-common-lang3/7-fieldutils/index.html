@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta name="baidu-site-verification" content="NQB7kASlT6" />
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>FieldUtils工具类</title>
+  
+  
+  <meta name="keywords" content="devops">	
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  
+  <script src="/js/rem.js"></script>
+  
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-144.png">
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8b9485b9f982efd2c649f426a25b1fe8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+
+    <link href="/css/docs.css" rel="stylesheet">
+    <header id="header">
+        <div class='navbar  top-white-nav  top-nav' role="navigation" id="navbar">
+    
+        <div class="navbar-left-buttons">
+            <button type="button" class="navbar-toggle btn-template-main">
+                <i class="iconfont">&#xe78e;</i>
+            </button>
+        </div>
+    
+    
+    
+
+    <div class="navbar-buttons">
+        <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation-mobile">
+            <i class="iconfont">&#xe790;</i>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+            
+        </ul>
+    </div>
+    <div class="global-language">
+        <a>ZH</a>
+        <ul class="language-list">
+            
+            <li><a href="/zh/">中文</a></li>
+            
+            <li><a href="/en/">English</a></li>
+            
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+<div class="navbar-collapse-bg none" id="navbar-collapse-bg">
+    <div class="navbar-collapse collapse" id="navigation-mobile">
+        
+            
+        
+            
+        
+            
+        
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+        </ul>
+        
+    </div>
+
+</div>
+
+
+    </header>
+    <body>
+        <div id="content" class="docs">
+            
+            
+            <div class="docs-menu">
+            <div class="docs-search"><div class="sidebar-menu search">
+    <input id="search-input" class="search-input" type="text" placeholder='请搜索关键字'>
+    <button id="search" class="search-button" type="submit">搜索</button>
+</div></div>
+                
+                <li data-nav-id="/zh/docs/" class="dd-item parent haschildren">
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/10-overview/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/10-overview/">总体介绍</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/10-overview/0-team-overview/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/10-overview/0-team-overview/">
+                        团队介绍
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/20-development-specification/">开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/">基础开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/1-branch-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/1-branch-management/">分支管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/2-version-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/2-version-management/">版本管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/3-name-convention/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/3-name-convention/">命名规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/">前端开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/">开发环境搭建</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/">
+                        开发环境搭建(Mac)
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/">
+                        开发环境搭建(Windows)
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/">编码规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/3-back-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/3-back-end/">后端开发规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/30-development-manual/">开发手册</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/1-front-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/1-front-end/">前端开发手册</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/">后端开发手册</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/">开发框架解析</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/">Spring系列</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/">
+                        Spring Boot简介
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/">
+                        Spring Boot自动化配置
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/">
+                        Spring Boot配置类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/" class="dd-item">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/">MyBatis系列</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/">开发工具类</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/">JDK工具类</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/">
+                        Optional类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/">common-lang3</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/">
+                        StringUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/">
+                        ArrayUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/">
+                        DateUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/">
+                        DateFormatUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/">
+                        ClassUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/">
+                        MethodUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/" class="dd-item active">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/">
+                        FieldUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/">
+                        ObjectUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/">
+                        BooleanUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/">
+                        RandomUtils工具类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/3-dev-tools/">开发工具指引</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/1-git/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/1-git/">
+                        Git使用指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/2-idea/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/2-idea/">
+                        Idea使用指南
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/80-team-doc/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/80-team-doc/">团队文档</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/80-team-doc/1-doc-quickstart/">文档指南</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/">
+                        文档贡献指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/">
+                        Hugo框架指引
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/">
+                        MarkDown速查手册
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/99-code-review/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/99-code-review/">代码复查</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/99-code-review/1-check-list/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/99-code-review/1-check-list/">
+                        代码复查清单
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            
+            
+            </div>
+            
+            <div class='docs-post content-post ' id="content-post" >
+                
+
+<h1 id="fieldutils-工具类使用">FieldUtils 工具类使用</h1>
+
+<blockquote>
+<p>类路径：<code>org.apache.commons.lang3.reflect.FieldUtils</code><br/>
+版本：<code>commons-lang3:3.7</code>  <br/>
+Java doc：<a href="http://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/reflect/FieldUtils.html" target="_blank">FieldUtils API</a><br/>
+说明：<code>FieldUtils</code>是一个通过反射处理字段的实用工具类，它提供的方法超出了普通编码的范围，可以修改<strong>不应该</strong>修改的字段，应该谨慎使用该工具类<br/></p>
+</blockquote>
+
+<h2 id="fieldutils-类图">FieldUtils 类图</h2>
+
+<p><img src="/img/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/FieldUtils类图.png" alt="FieldUtils 类图" /></p>
+
+<h3 id="构造方法">构造方法</h3>
+
+<ul>
+<li><strong>说明</strong>：该工具类虽然提供了构造方法，但该构造方法<strong>不应该</strong>出现在标准程序中。提供公共构造方法是为了允许在有需要的时候提供<code>JavaBean</code>实例。</li>
+</ul>
+
+<pre><code class="language-java">FieldUtils()
+</code></pre>
+
+<h3 id="获取类字段">获取类字段</h3>
+
+<ul>
+<li>返回指定类以及<strong>父类(如果有)</strong>中的所有字段，以数组格式返回</li>
+</ul>
+
+<pre><code class="language-java">/**
+ *
+ * @param cls 查询的类，不允许为空
+ * @return 返回一个字段数组(可能为空).
+ * @throws IllegalArgumentException 类为null时抛出无效参数异常
+ */
+static Field[] getAllFields(Class&lt;?&gt; cls)
+</code></pre>
+
+<ul>
+<li>返回指定类以及<strong>父类(如果有)</strong>中的所有字段，以List格式返回</li>
+</ul>
+
+<pre><code class="language-java">/**
+ *
+ * @param cls 查询的类，不允许为空
+ * @return 返回一个字段列表(可能为空).
+ * @throws IllegalArgumentException 类为null时抛出无效参数异常
+ */
+static List&lt;Field&gt; getAllFieldsList(Class&lt;?&gt; cls)
+</code></pre>
+
+<ul>
+<li>通过字段名称获取指定类中一个可访问范围内的字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ *
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @return 字段对象
+ * @throws IllegalArgumentException 类为null时抛出无效参数异常
+ */
+static Field getDeclaredField(Class&lt;?&gt; cls, String fieldName)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制(如果需要)获取指定类中一个字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段对象
+ * @throws IllegalArgumentException 类为null时抛出无效参数异常
+ */
+static Field getDeclaredField(final Class&lt;?&gt; cls, final String fieldName, final boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称获取指定类及其<strong>父类</strong>中的一个可访问范围内的字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ *
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @return 字段对象
+ * @throws IllegalArgumentException 类为null时抛出无效参数异常
+ */
+static Field getField(Class&lt;?&gt; cls, String fieldName)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制(如果需要)获取指定类及其<strong>父类</strong>中的一个字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段对象
+ * @throws IllegalArgumentException 类为null时抛出无效参数异常
+ */
+static Field getField(final Class&lt;?&gt; cls, final String fieldName, final boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过指定注解获取指定类及其<strong>父类</strong>中的一个字段，以列表形式返回</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param annotationCls 查询的注解，该注解必须允许在字段上使用
+ * @return 字段列表(可能为空)
+ * @throws IllegalArgumentException 注解为null时抛出无效参数异常
+ */
+static List&lt;Field&gt;	getFieldsListWithAnnotation(Class&lt;?&gt; cls, Class&lt;? extends Annotation&gt; annotationCls)
+</code></pre>
+
+<ul>
+<li>通过指定注解获取指定类及其<strong>父类</strong>中的一个字段，以数组形式返回</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param annotationCls 查询的注解，该注解必须允许在字段上使用
+ * @return 字段数组(可能为空)
+ * @throws IllegalArgumentException 注解为null时抛出无效参数异常
+ */
+static Field[]	getFieldsWithAnnotation(Class&lt;?&gt; cls, Class&lt;? extends Annotation&gt; annotationCls)
+</code></pre>
+
+<h3 id="读取字段值">读取字段值</h3>
+
+<ul>
+<li>通过字段名称读取指定类中的公有字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @return 字段值
+ * @throws IllegalArgumentException 如果对象为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static Object readDeclaredField(Object target, String fieldName)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制读取指定类中的字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段值
+ * @throws IllegalArgumentException 如果对象为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static Object readDeclaredField(Object target, String fieldName, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称读取指定类中的静态字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @return 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static Object readDeclaredStaticField(Class&lt;?&gt; cls, String fieldName)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制读取指定类中的静态字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static Object readDeclaredStaticField(Object target, String fieldName, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段对象读取指定类中及其<strong>父类</strong>中的公有字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param field 字段对象
+ * @param target 目标对象
+ * @return 字段值
+ * @throws IllegalArgumentException 如果目标对象为null，或者字段对象为null，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static Object readField(Field field, Object target)
+</code></pre>
+
+<ul>
+<li>通过字段对象强制读取指定类及其<strong>父类</strong>中的字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param field 字段对象
+ * @param target 目标对象
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段值
+ * @throws IllegalArgumentException 如果目标对象为null，或者字段对象为null，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static Object readField(Field field, Object target, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称读取指定类中及其<strong>父类</strong>中的公有字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @return 字段值
+ * @throws IllegalArgumentException 如果对象为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static Object readField(Object target, String fieldName)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制读取指定类及其<strong>父类</strong>中的字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段值
+ * @throws IllegalArgumentException 如果对象为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static Object readField(Object target, String fieldName, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称读取指定类及其<strong>父类</strong>中的静态字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @return 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static Object readStaticField(Class&lt;?&gt; cls, String fieldName)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制读取指定类及其<strong>父类</strong>中的静态字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param cls 查询的类，不允许为空
+ * @param fieldName 字段名称
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static Object readStaticField(Object target, String fieldName, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>读取公有静态字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param field 字段对象
+ * @return 字段值
+ * @throws IllegalArgumentException 如果字段为null，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static Object readStaticField(Field field)
+</code></pre>
+
+<ul>
+<li>强制读取静态字段</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param field 字段对象
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @return 字段值
+ * @throws IllegalArgumentException 如果字段为null，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static Object readStaticField(Field field, boolean forceAccess)
+</code></pre>
+
+<h3 id="删除字段-final-修饰符">删除字段<code>final</code>修饰符</h3>
+
+<ul>
+<li>删除公有字段<code>final</code>修饰符</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param field 字段对象
+ * @throws IllegalArgumentException 如果字段为null，抛出无效参数异常
+ */
+static void	removeFinalModifier(Field field)
+</code></pre>
+
+<ul>
+<li>强制删除字段<code>final</code>修饰符</li>
+</ul>
+
+<pre><code class="language-java">/**
+ * @param field 字段对象
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果字段为null，抛出无效参数异常
+ */
+static void	removeFinalModifier(Field field, boolean forceAccess)
+</code></pre>
+
+<h3 id="设置字段值">设置字段值</h3>
+
+<ul>
+<li>通过字段名称设置指定类中的公有字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static void	writeDeclaredField(Object target, String fieldName, Object value)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制设置指定类中的字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static void	writeDeclaredField(Object target, String fieldName, Object value, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称设置指定类中的静态字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param cls 设置的类，不允许为空
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static void	writeDeclaredStaticField(Class&lt;?&gt; cls, String fieldName, Object value)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制设置指定类中的静态字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param cls 设置的类，不允许为空
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static void	writeDeclaredStaticField(Class&lt;?&gt; cls, String fieldName, Object value, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段对象设置指定类及其<strong>父类</strong>中的公有字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param field 字段对象
+ * @param target 目标对象
+ * @param value 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段为null，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static void	writeField(Field field, Object target, Object value)
+</code></pre>
+
+<ul>
+<li>通过字段对象强制设置指定类及其<strong>父类</strong>中的字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param field 字段对象
+ * @param target 目标对象
+ * @param value 字段值
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果类为null，或者字段为null，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static void	writeField(Field field, Object target, Object value, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称设置指定类及其<strong>父类</strong>中的公有字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static void	writeField(Object target, String fieldName, Object value)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制设置指定类及其<strong>父类</strong>中的字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param target 目标对象
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static void	writeField(Object target, String fieldName, Object value, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>通过字段名称设置指定类及其<strong>父类</strong>中的静态字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param cls 设置的类，不允许为空
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static void	writeStaticField(Class&lt;?&gt; cls, String fieldName, Object value)
+</code></pre>
+
+<ul>
+<li>通过字段名称强制设置指定类及其<strong>父类</strong>中的静态字段值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param cls 设置的类，不允许为空
+ * @param fieldName 字段名称
+ * @param value 字段值
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果类为null，或者字段名称为空或者找不到，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static void	writeStaticField(Class&lt;?&gt; cls, String fieldName, Object value, boolean forceAccess)
+</code></pre>
+
+<ul>
+<li>设置公有静态字段的值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param field 字段对象
+ * @param value 字段值
+ * @throws IllegalArgumentException 如果字段为null，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，抛出无效访问异常
+ */
+static void	writeStaticField(Field field, Object value)
+</code></pre>
+
+<ul>
+<li>强制设置静态字段的值</li>
+</ul>
+
+<pre><code class="language-java">/** 
+ * @param field 字段对象
+ * @param value 字段值
+ * @param forceAccess 是否强制访问(参考 java.lang.reflect.AccessibleObject#setAccessible(boolean))
+ * @throws IllegalArgumentException 如果字段为null，或者字段值没有分配，抛出无效参数异常
+ * @throws IllegalAccessException 如果字段不是公有，并且没有设置强制访问，抛出无效访问异常
+ */
+static void	writeStaticField(Field field, Object value, boolean forceAccess)
+</code></pre>
+
+<h3 id="使用示例">使用示例</h3>
+
+<pre><code class="language-java">static class Parent {
+    public static final Integer PARENT_ID = 0;
+    private static final String PARENT_NAME = &quot;PARENT&quot;;
+    private Integer parentId = 0;
+    public String parentName = &quot;PARENT&quot;;
+    @DateTimeFormat
+    private Date parentBorn = new Date();
+}
+
+static class Child extends Parent {
+    public static final Integer CHILD_ID = 1;
+    private static final String CHILD_NAME = &quot;CHILD&quot;;
+    private Integer childId = 1;
+    public String childName = &quot;CHILD&quot;;
+    @DateTimeFormat
+    public Date childBorn = new Date();
+}
+
+@Test
+@DisplayName(&quot;FieldUtils 工具类 - 获取类字段&quot;)
+void getFieldTest() {
+    FieldUtils.getAllFields(Child.class);
+    /* Field[10]
+     * 0 = {Field} &quot;public static final java.lang.Integer x.x.AppTest$Child.CHILD_ID&quot;
+     * 1 = {Field} &quot;private static final java.lang.String x.x.AppTest$Child.CHILD_NAME&quot;
+     * 2 = {Field} &quot;private java.lang.Integer x.x.AppTest$Child.childId&quot;
+     * 3 = {Field} &quot;public java.lang.String x.x.AppTest$Child.childName&quot;
+     * 4 = {Field} &quot;public java.util.Date x.x.AppTest$Child.childBorn&quot;
+     * 5 = {Field} &quot;public static final java.lang.Integer x.x.AppTest$Parent.PARENT_ID&quot;
+     * 6 = {Field} &quot;private static final java.lang.String x.x.AppTest$Parent.PARENT_NAME&quot;
+     * 7 = {Field} &quot;private java.lang.Integer x.x.AppTest$Parent.parentId&quot;
+     * 8 = {Field} &quot;public java.lang.String x.x.AppTest$Parent.parentName&quot;
+     * 9 = {Field} &quot;private java.util.Date x.x.AppTest$Parent.parentBorn&quot;
+     */
+    FieldUtils.getAllFieldsList(Child.class);
+    /* ArrayList size = 10
+     * 0 = {Field} &quot;public static final java.lang.Integer x.x.AppTest$Child.CHILD_ID&quot;
+     * 1 = {Field} &quot;private static final java.lang.String x.x.AppTest$Child.CHILD_NAME&quot;
+     * 2 = {Field} &quot;private java.lang.Integer x.x.AppTest$Child.childId&quot;
+     * 3 = {Field} &quot;public java.lang.String x.x.AppTest$Child.childName&quot;
+     * 4 = {Field} &quot;public java.util.Date x.x.AppTest$Child.childBorn&quot;
+     * 5 = {Field} &quot;public static final java.lang.Integer x.x.AppTest$Parent.PARENT_ID&quot;
+     * 6 = {Field} &quot;private static final java.lang.String x.x.AppTest$Parent.PARENT_NAME&quot;
+     * 7 = {Field} &quot;private java.lang.Integer x.x.AppTest$Parent.parentId&quot;
+     * 8 = {Field} &quot;public java.lang.String x.x.AppTest$Parent.parentName&quot;
+     * 9 = {Field} &quot;private java.util.Date x.x.AppTest$Parent.parentBorn&quot;
+     */
+
+    FieldUtils.getDeclaredField(Parent.class, &quot;parentName&quot;);
+    // public java.lang.String x.x.AppTest$Parent.parentName
+    FieldUtils.getDeclaredField(Child.class, &quot;parentName&quot;);
+    // null (只读取当前类字段)
+    FieldUtils.getDeclaredField(Parent.class, &quot;parentId&quot;);
+    // null (不可访问)
+
+    FieldUtils.getDeclaredField(Parent.class, &quot;parentId&quot;, true);
+    // private java.lang.Integer x.x.AppTest$Parent.parentId
+
+    FieldUtils.getField(Child.class, &quot;parentId&quot;);
+    // null (不可访问)
+    FieldUtils.getField(Child.class, &quot;parentId&quot;, true);
+    // private java.lang.Integer x.x.AppTest$Parent.parentId
+
+    FieldUtils.getFieldsWithAnnotation(Child.class, DateTimeFormat.class);
+    /* Field[2]
+     * 0 = {Field@1549} &quot;public java.util.Date x.x.AppTest$Child.childBorn&quot;
+     * 1 = {Field@1550} &quot;private java.util.Date x.x.AppTest$Parent.parentBorn&quot;
+     */
+    FieldUtils.getFieldsListWithAnnotation(Child.class, DateTimeFormat.class);
+    /* ArrayList size = 2
+     * 0 = {Field@1549} &quot;public java.util.Date x.x.AppTest$Child.childBorn&quot;
+     * 1 = {Field@1550} &quot;private java.util.Date x.x.AppTest$Parent.parentBorn&quot;
+     */
+}
+
+@Test
+@DisplayName(&quot;FieldUtils 工具类 - 读取类字段值&quot;)
+void readFieldTest() throws IllegalAccessException {
+    Child child = new Child();
+    FieldUtils.readDeclaredField(child, &quot;parentId&quot;);
+    // java.lang.IllegalArgumentException: Cannot locate declared field class x.x.AppTest$Child.parentId (只读取当前类)
+    FieldUtils.readDeclaredField(child, &quot;childId&quot;);
+    // java.lang.IllegalArgumentException: Cannot locate declared field class x.x.AppTest$Child.childId (不可访问)
+    FieldUtils.readDeclaredField(child, &quot;childName&quot;);
+    // CHILD
+    FieldUtils.readDeclaredField(child, &quot;CHILD_NAME&quot;);
+    // java.lang.IllegalArgumentException: Cannot locate declared field class x.x.AppTest$Child.CHILD_NAME (不能读取静态字段)
+    FieldUtils.readDeclaredField(child, &quot;childId&quot;, true);
+    // 1
+
+    FieldUtils.readDeclaredStaticField(Child.class, &quot;CHILD_NAME&quot;);
+    // java.lang.IllegalArgumentException: Cannot locate declared field x.x.AppTest$Child.CHILD_NAME (不可访问)
+    FieldUtils.readDeclaredStaticField(Child.class, &quot;CHILD_ID&quot;);
+    // 1
+
+    FieldUtils.readDeclaredStaticField(Child.class, &quot;CHILD_NAME&quot;, true);
+    // CHILD
+
+    FieldUtils.readField(child, &quot;parentId&quot;);
+    // java.lang.IllegalArgumentException: Cannot locate field parentId on class x.x.AppTest$Child (不可访问)
+
+    FieldUtils.readField(child, &quot;parentId&quot;, true);
+    // 1
+
+    FieldUtils.readField(FieldUtils.getField(Parent.class, &quot;parentId&quot;, true), child);
+    // 0
+}
+
+@Test
+@DisplayName(&quot;FieldUtils 工具类 - 设置类字段值&quot;)
+void writeFieldTest() throws IllegalAccessException {
+    Child child = new Child();
+    FieldUtils.writeField(child, &quot;parentId&quot;, 2);
+    // java.lang.IllegalArgumentException: Cannot locate declared field x.x.AppTest$Child.parentId (不可访问)
+
+    FieldUtils.writeField(child, &quot;parentId&quot;, 2, true);
+    // (设置成功)
+    FieldUtils.writeField(child, &quot;parentId&quot;, &quot;PARENT_NAME&quot;, true);
+    // java.lang.IllegalArgumentException: Can not set java.lang.Integer field x.x.AppTest$Parent.parentId to java.lang.String (类型转换错误)
+
+    Field field = FieldUtils.getField(Child.class, &quot;CHILD_NAME&quot;, true);
+    FieldUtils.writeStaticField(field, &quot;CHILD_NAME2&quot;, true);
+    // java.lang.IllegalAccessException: Can not set static final java.lang.String field x.x.AppTest$Child.CHILD_NAME to java.lang.String (不可设置final字段)
+    FieldUtils.removeFinalModifier(field, true);
+    // (移除final修饰符)
+    FieldUtils.writeStaticField(field, &quot;CHILD_NAME2&quot;, true);
+    // (设置成功)
+    FieldUtils.readStaticField(field);
+    // CHILD_NAME2
+}
+</code></pre>
+
+            </div>
+            <div class="article-menu">
+                
+                <ul id="article-nav-ul">
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div style="clear: both;"></div>
+
+        <footer id="footer" class="footer">
+    <nav class="footer-nav">
+        
+            
+                <a href="/zh/docs/">文档</a>
+            
+        
+            
+                
+        
+            
+                <a href="/">返回首页</a>
+            
+        
+    </nav>
+    <div class="social">
+        <a href="https://github.com/choerodon/" target="_blank" class="social-single"><i class="iconfont icon-github-footer"></i></a>
+        <i class="iconfont icon-wechat-footer social-single"></i>
+        <div class="wechat-hover load-img">
+            <div data-loader='circle'></div>
+            <img data-src="/img/footer/wechat-code.jpg"/>
+        </div>
+        
+        <a href="http://forum.choerodon.io/" target="_blank" class="social-single"><i class="iconfont icon-forum-footer"></i></a>
+    </div>
+    <div class="copy-right" class="center">
+        Copyright &copy; The Choerodon Author. All rights reserved.
+    </div>
+    <div id="big-img" class="black-big-img">
+        <img src="" alt="">
+    </div>
+</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        
+        
+    </body>
+
+    <script src="/js/front.js"></script>
+
+    <script src="/js/doc-search.js"></script>
+
+    <script src="/js/docs.js"></script>
+
+    <script src="/js/player.js"></script>
+
+</html>

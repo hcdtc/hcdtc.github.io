@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发环境搭建 on 汉得中台成都远程中心 | 中台远程交付团队</title>
+    <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/</link>
+    <description>Recent content in 开发环境搭建 on 汉得中台成都远程中心 | 中台远程交付团队</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>开发环境搭建(Mac)</title>
+      <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/</guid>
+      <description> 开发环境搭建(Mac) 本章节讲述了前端开发所需要的一些软件依赖，以及如何在Mac OS 环境下进行安装使用。
+开发工具  Git Node.js 8.11.1及以上版本 python PyYAML PyMySQL  安装提前准备  在HomeBrew官网下载或者根据文档安装homebrew。  Git 安装  在 Git 官网下载Mac平台的Git。 运行 brew install git 安装git。 安装完成后打开终端后执行 git --version ，有提示则说明环境安装成功。  node 安装  在 Node.js官网下载用于Mac平台的安装包。 运行 brew install node 安装node。 配置完成后打开终端执行 node --version，有提示则说明环境安装成功。  在Mac上安装python 在项目中，python(2.7.X)用于执行功能性脚本。
+ 在python 官网 下载2.7版本的python 安装包。 运行brew install python@2 安装python。 配置完成后打开 git bash 执行 python，有提示则说明环境安装成功。 通过pip 安装PyYAML，PyMySQL。打开 git bash 执行 pip install PyYAML PyMySQL，然后安装完成之后执行pip list 查看安装的版本。  </description>
+    </item>
+    
+    <item>
+      <title>开发环境搭建(Windows)</title>
+      <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/</guid>
+      <description> 开发环境搭建(Windows) 本章节讲述了前端开发所需要的一些软件依赖，以及如何在Windows 环境下进行安装使用。
+开发工具  Git Node.js 8.11.1及以上版本 python PyYAML PyMySQL  Git 安装  在 Git 官网 下载对应平台的 Git。 本地执行安装文件，安装 Git 环境。 配置完成后打开 git bash 执行 git --version ，有提示则说明环境安装成功。    对于 Windows，安装 Git 以后，你可以在任意目录右键，选择Git Bash Here。 打开的 MINGW 命令窗口可以执行兼容 linux 系统的命令。   node 安装  在 Node.js官网 下载用于Windows平台的安装包。 本地执行安装文件。 配置完成后打开 git bash 执行 node --version，有提示则说明环境安装成功。  在Windows上安装python Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。
+在项目中，python用于执行功能性脚本。
+ 在python 官网 下载2.7版本的python 安装包。 本地执行安装文件。 配置完成后打开 git bash 执行 python，有提示则说明环境安装成功。 通过pip 安装PyYAML，PyMySQL。打开 git bash 执行 pip install PyYAML PyMySQL，然后安装完成之后执行pip list 查看安装的版本。  </description>
+    </item>
+    
+  </channel>
+</rss>

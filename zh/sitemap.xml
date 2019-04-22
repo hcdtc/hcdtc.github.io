@@ -3,7 +3,167 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/1-git/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/1-basic/1-branch-management/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/1-front-end/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/1-basic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/2-idea/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/1-basic/2-version-management/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/3-back-end/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/1-basic/3-name-convention/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/</loc>
+  </url>
+  
+  <url>
     <loc>http://hcdtc.github.io/zh/docs/10-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/</loc>
   </url>
   
   <url>
@@ -11,7 +171,15 @@
   </url>
   
   <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/</loc>
+  </url>
+  
+  <url>
     <loc>http://hcdtc.github.io/zh/docs/99-code-review/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/</loc>
   </url>
   
   <url>
@@ -26,21 +194,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://hcdtc.github.io/zh/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://hcdtc.github.io/zh/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://hcdtc.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://hcdtc.github.io/zh/"
                 />
   </url>
   
@@ -74,6 +227,21 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://hcdtc.github.io/zh/docs/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://hcdtc.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://hcdtc.github.io/zh/"
                 />
   </url>
   

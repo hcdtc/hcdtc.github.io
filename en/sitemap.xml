@@ -18,21 +18,6 @@
   </url>
   
   <url>
-    <loc>http://hcdtc.github.io/en/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://hcdtc.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://hcdtc.github.io/en/"
-                />
-  </url>
-  
-  <url>
     <loc>http://hcdtc.github.io/en/tags/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -58,6 +43,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://hcdtc.github.io/en/docs/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/en/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://hcdtc.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://hcdtc.github.io/en/"
                 />
   </url>
   

@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta name="baidu-site-verification" content="NQB7kASlT6" />
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>ObjectUtils工具类</title>
+  
+  
+  <meta name="keywords" content="devops">	
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  
+  <script src="/js/rem.js"></script>
+  
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-144.png">
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8b9485b9f982efd2c649f426a25b1fe8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+
+    <link href="/css/docs.css" rel="stylesheet">
+    <header id="header">
+        <div class='navbar  top-white-nav  top-nav' role="navigation" id="navbar">
+    
+        <div class="navbar-left-buttons">
+            <button type="button" class="navbar-toggle btn-template-main">
+                <i class="iconfont">&#xe78e;</i>
+            </button>
+        </div>
+    
+    
+    
+
+    <div class="navbar-buttons">
+        <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation-mobile">
+            <i class="iconfont">&#xe790;</i>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+            
+        </ul>
+    </div>
+    <div class="global-language">
+        <a>ZH</a>
+        <ul class="language-list">
+            
+            <li><a href="/zh/">中文</a></li>
+            
+            <li><a href="/en/">English</a></li>
+            
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+<div class="navbar-collapse-bg none" id="navbar-collapse-bg">
+    <div class="navbar-collapse collapse" id="navigation-mobile">
+        
+            
+        
+            
+        
+            
+        
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+        </ul>
+        
+    </div>
+
+</div>
+
+
+    </header>
+    <body>
+        <div id="content" class="docs">
+            
+            
+            <div class="docs-menu">
+            <div class="docs-search"><div class="sidebar-menu search">
+    <input id="search-input" class="search-input" type="text" placeholder='请搜索关键字'>
+    <button id="search" class="search-button" type="submit">搜索</button>
+</div></div>
+                
+                <li data-nav-id="/zh/docs/" class="dd-item parent haschildren">
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/10-overview/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/10-overview/">总体介绍</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/10-overview/0-team-overview/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/10-overview/0-team-overview/">
+                        团队介绍
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/20-development-specification/">开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/">基础开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/1-branch-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/1-branch-management/">分支管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/2-version-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/2-version-management/">版本管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/3-name-convention/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/3-name-convention/">命名规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/">前端开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/">开发环境搭建</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/">
+                        开发环境搭建(Mac)
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/">
+                        开发环境搭建(Windows)
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/">编码规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/3-back-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/3-back-end/">后端开发规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/30-development-manual/">开发手册</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/1-front-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/1-front-end/">前端开发手册</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/">后端开发手册</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/">开发框架解析</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/">Spring系列</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/">
+                        Spring Boot简介
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/">
+                        Spring Boot自动化配置
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/">
+                        Spring Boot配置类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/" class="dd-item">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/">MyBatis系列</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/">开发工具类</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/">JDK工具类</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/">
+                        Optional类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/">common-lang3</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/">
+                        StringUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/">
+                        ArrayUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/">
+                        DateUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/">
+                        DateFormatUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/">
+                        ClassUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/">
+                        MethodUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/">
+                        FieldUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/" class="dd-item active">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/">
+                        ObjectUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/">
+                        BooleanUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/">
+                        RandomUtils工具类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/3-dev-tools/">开发工具指引</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/1-git/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/1-git/">
+                        Git使用指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/2-idea/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/2-idea/">
+                        Idea使用指南
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/80-team-doc/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/80-team-doc/">团队文档</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/80-team-doc/1-doc-quickstart/">文档指南</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/">
+                        文档贡献指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/">
+                        Hugo框架指引
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/">
+                        MarkDown速查手册
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/99-code-review/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/99-code-review/">代码复查</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/99-code-review/1-check-list/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/99-code-review/1-check-list/">
+                        代码复查清单
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            
+            
+            </div>
+            
+            <div class='docs-post content-post ' id="content-post" >
+                
+
+<h1 id="objectutils-工具类使用">ObjectUtils 工具类使用</h1>
+
+<blockquote>
+<p>工具类：<code>org.apache.commons.lang3.ObjectUtils</code><br />
+版本：<code>commons-lang3:3.7</code><br />
+地址：<a href="https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/ObjectUtils.html">ObjectUtils API</a><br />
+说明：<code>ObjectUtils</code> 是处理对象常用操作的工具类，包含默认值、hash/equals(已废弃)、Object原生toString()、toString(已废弃)、比较、求最常出现值、克隆和内联常量编译优化几部分。</p>
+</blockquote>
+
+<h2 id="概览">概览</h2>
+
+<p><img src="/img/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1531470788345.png" alt="概览" /></p>
+
+<h2 id="null常量">NULL常量</h2>
+
+<p>此常量为<code>ObjectUtils</code>内部类<code>org.apache.commons.lang3.ObjectUtils.Null</code>的一个实例，可以用来做<code>Hashtable</code>的键，用来代替不被接受的null。</p>
+
+<h2 id="默认值">默认值</h2>
+
+<h3 id="defaultifnull-t-t">defaultIfNull(T, T)</h3>
+
+<p>如果传递的对象为null，则返回默认值。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.defaultIfNull(null,null)</td>
+<td align="right">null</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.defaultIfNull(null,&ldquo;&rdquo;)</td>
+<td align="right">&rdquo;&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.defaultIfNull(null,&ldquo;zz&rdquo;)</td>
+<td align="right">&ldquo;zz&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.defaultIfNull(&ldquo;abc&rdquo;,*)</td>
+<td align="right">&ldquo;abc&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.defaultIfNull(Boolean.TRUE,*)</td>
+<td align="right">Boolean.TRUE</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="firstnonnull-t">firstNonNull(T&hellip;)</h3>
+
+<p>返回数组中非空的第一个值。 如果所有值都为null或数组为null或为空，则返回null。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.firstNonNull(null,null)</td>
+<td align="right">null</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull(null,&ldquo;&rdquo;)</td>
+<td align="right">&rdquo;&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull(null,null,&ldquo;&rdquo;)</td>
+<td align="right">&rdquo;&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull(null,&ldquo;zz&rdquo;)</td>
+<td align="right">&ldquo;zz&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull(&ldquo;abc&rdquo;,*)</td>
+<td align="right">&ldquo;abc&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull(null,&ldquo;xyz&rdquo;,*)</td>
+<td align="right">&ldquo;xyz&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull(Boolean.TRUE,*)</td>
+<td align="right">Boolean.TRUE</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.firstNonNull()</td>
+<td align="right">null</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="anynotnull-object">anyNotNull(Object&hellip;)</h3>
+
+<p>检查给定数组中的任何值是否为空。如果所有值都为null或数组为null或为空，则返回false。 否则返回true。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.anyNotNull(*)</td>
+<td align="right">true</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.anyNotNull(*,null)</td>
+<td align="right">true</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.anyNotNull(null,*)</td>
+<td align="right">true</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.anyNotNull(null,null,<em>,</em>)</td>
+<td align="right">true</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.anyNotNull(null)</td>
+<td align="right">false</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.anyNotNull(null,null)</td>
+<td align="right">false</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="allnotnull-object">allNotNull(Object&hellip;)</h3>
+
+<p>检查数组中的所有值是否都不为空。如果任何值为null或数组为null，则返回false。 如果数组中的所有元素都不为null或数组为空（不包含元素），则返回true。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.allNotNull(*)</td>
+<td align="right">true</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.allNotNull(<em>,</em>)</td>
+<td align="right">true</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.allNotNull(null)</td>
+<td align="right">false</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.allNotNull(null,null)</td>
+<td align="right">false</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.allNotNull(null,*)</td>
+<td align="right">false</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.allNotNull(*,null)</td>
+<td align="right">false</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.allNotNull(<em>,</em>,null,*)</td>
+<td align="right">false</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="hash-equals">hash/equals</h2>
+
+<h3 id="equals-object-object-deprecated">equals(Object, Object) @Deprecated</h3>
+
+<p>比较两个对象是否相等，其中一个或两个对象可以为null。</p>
+
+<p>请使用java7中引入的<code>java.util.Objects.equals(Object, Object)</code></p>
+
+<h3 id="notequal-object-object-deprecated">notEqual(Object, Object) @Deprecated</h3>
+
+<p>比较两个对象是否不相等，其中一个或两个对象可以为null。</p>
+
+<p>请使用java7中引入的<code>java.util.Objects.equals(Object, Object)</code>然后 <strong>取反</strong></p>
+
+<h3 id="hashcode-object-deprecated">hashCode(Object) @Deprecated</h3>
+
+<p>获取对象的哈希值，null -&gt; 0</p>
+
+<p>请使用java7中引入的<code>java.util.Objects.hashCode(Object)</code></p>
+
+<h3 id="hashcodemulti-object-deprecated">hashCodeMulti(Object&hellip;) @Deprecated</h3>
+
+<p>获取多个对象的哈希值。与包含指定对象的ArrayList计算的哈希值相同。</p>
+
+<p>请使用java7中引入的<code>java.util.Objects.hash(Object...)</code></p>
+
+<h2 id="object原生tostring">Object原生toString()</h2>
+
+<h3 id="identitytostring-object">identityToString(Object)</h3>
+
+<p>模拟由Object生成的toString返回值。null将返回null。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.identityToString(null)</td>
+<td align="right">null</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(&ldquo;&rdquo;)</td>
+<td align="right">&ldquo;java.lang.String@1e23&rdquo;</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(Boolean.TRUE)</td>
+<td align="right">&ldquo;java.lang.Boolean@7fa&rdquo;</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="identitytostring-appendable-object">identityToString(Appendable, Object)</h3>
+
+<p>模拟由Object生成的toString返回值并追加到Appendable对象尾部。两个参数都不能为空，否则抛出NPE。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">等效表达式</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.identityToString(appendable,&ldquo;&rdquo;)</td>
+<td align="right">appendable.append(&ldquo;java.lang.String@1e23&rdquo;)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(appendable,Boolean.TRUE)</td>
+<td align="right">appendable.append(&ldquo;java.lang.Boolean@7fa&rdquo;)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(appendable,Boolean.TRUE)</td>
+<td align="right">appendable.append(&ldquo;java.lang.Boolean@7fa&rdquo;)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="identitytostring-strbuilder-object-deprecated">identityToString(StrBuilder, Object) @Deprecated</h3>
+
+<p>模拟由Object生成的toString返回值并追加到StrBuilder对象尾部。两个参数都不能为空，否则抛出NPE。</p>
+
+<p>由于StrBuilder对象已废弃，请使用本类中其他<code>identityToString</code>方法</p>
+
+<h3 id="identitytostring-stringbuffer-object">identityToString(StringBuffer, Object)</h3>
+
+<p>模拟由Object生成的toString返回值并追加到StringBuffer对象尾部。两个参数都不能为空，否则抛出NPE。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">等效表达式</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.identityToString(buf,&ldquo;&rdquo;)</td>
+<td align="right">buf.append(&ldquo;java.lang.String@1e23&rdquo;)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(buf,Boolean.TRUE)</td>
+<td align="right">buf.append(&ldquo;java.lang.Boolean@7fa&rdquo;)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(buf,Boolean.TRUE)</td>
+<td align="right">buf.append(&ldquo;java.lang.Boolean@7fa&rdquo;)</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="identitytostring-stringbuilder-object">identityToString(StringBuilder, Object)</h3>
+
+<p>模拟由Object生成的toString返回值并追加到StringBuilder对象尾部。两个参数都不能为空，否则抛出NPE。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">等效表达式</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.identityToString(builder,&ldquo;&rdquo;)</td>
+<td align="right">builder.append(&ldquo;java.lang.String@1e23&rdquo;)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(builder,Boolean.TRUE)</td>
+<td align="right">builder.append(&ldquo;java.lang.Boolean@7fa&rdquo;)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.identityToString(builder,Boolean.TRUE)</td>
+<td align="right">builder.append(&ldquo;java.lang.Boolean@7fa&rdquo;)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="tostring">ToString</h2>
+
+<h3 id="tostring-object-deprecated">toString(Object) @Deprecated</h3>
+
+<p>调用对象的toString方法并返回。空对象将返回&rdquo;&rdquo;</p>
+
+<p>请使用java7中引入的<code>java.util.Objects.toString(myObject, &quot;&quot;)</code></p>
+
+<h3 id="tostring-object-string-deprecated">toString(Object, String) @Deprecated</h3>
+
+<p>调用第一个参数对象的toString方法并返回。第一个参数对象为空将返回第二个参数对象</p>
+
+<p>请使用java7中引入的<code>java.util.Objects.toString(Object, String)</code></p>
+
+<h2 id="比较">比较</h2>
+
+<h3 id="t-extends-comparable-super-t-min-t"><T extends Comparable<? super T>&gt; min(T&hellip;)</h3>
+
+<p>返回给定参数中的最小值，空值安全</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.min(1,2,3,5,5,5,0)</td>
+<td align="right">0</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.min(1,2,3,5,null,5,0)</td>
+<td align="right">0</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.min()</td>
+<td align="right">null</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="t-extends-comparable-super-t-max-t"><T extends Comparable<? super T>&gt; max(T&hellip;)</h3>
+
+<p>返回给定参数中的最大值，空值安全</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.min(1,2,3,5,5,5,0)</td>
+<td align="right">5</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.min(1,2,3,5,null,5,0)</td>
+<td align="right">5</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.min()</td>
+<td align="right">null</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="t-extends-comparable-super-t-compare-t-t"><T extends Comparable<? super T>&gt; compare(T, T)</h3>
+
+<p>空值安全的常规比较，设第一个参数为a，第二个参数为b，如果a &lt; b则为负值，如a = b则为零，如果a &gt; b则为正值. 空值判定为比非空值小。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.compare(1, 2)</td>
+<td align="right">-1</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.compare(1, null)</td>
+<td align="right">1</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.compare(null, null)</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="t-extends-comparable-super-t-compare-t-t-boolean"><T extends Comparable<? super T>&gt; compare(T, T, boolean)</h3>
+
+<p>空值安全的常规比较，设第一个参数为a，第二个参数为b，如果a &lt; b则为负值，如a = b则为零，如果a &gt; b则为正值. 如果第三个参数为true，空值判定为比非空值大，否则反之。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.compare(1, null, true)</td>
+<td align="right">-1</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.compare(1, null, false)</td>
+<td align="right">1</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.compare(null, null, false)</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="t-extends-comparable-super-t-median-t"><T extends Comparable<? super T>&gt; median(T&hellip;)</h3>
+
+<p>返回给定对象的中位数，如果给定对象的个数是偶数，则返回更小那个中位数。参数必传且不能有null值。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.median(1,2,3)</td>
+<td align="right">2</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.median(1,2,3,4)</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="median-comparator-t-t">median(Comparator<T>, T&hellip;)</h3>
+
+<p>返回给定对象的中位数，如果给定对象的个数是偶数，则返回更小那个中位数。参数必传且不能有null值。排序过程使用给定比较器。比较器不能为空</p>
+
+<p>例子：略</p>
+
+<h2 id="最常出现">最常出现</h2>
+
+<h3 id="mode-t">mode(T&hellip;)</h3>
+
+<p>返回给定参数中最常出现的值，参数必传。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.mode(1,2,3,3,3,4,5)</td>
+<td align="right">3</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.mode(1,2,3,null,3,4,5)</td>
+<td align="right">3</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.mode(1,2,null,null,3,null,5)</td>
+<td align="right">null</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="克隆">克隆</h2>
+
+<h3 id="clone-t">clone(T)</h3>
+
+<p>克隆一个对象，如果对象没有实现<code>Cloneable</code>接口，则返回null。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.clone(new int[] {1,2,3,4,5})</td>
+<td align="right">[1,2,3,4,5](新对象)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.clone(new BitSet(1))</td>
+<td align="right">{}(新对象)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.clone(ObjectUtils.NULL)</td>
+<td align="right">null</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="cloneifpossible-t">cloneIfPossible(T)</h3>
+
+<p>克隆一个对象，如果对象没有实现<code>Cloneable</code>接口，则返回传入对象自身。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">表达式</th>
+<th align="right">值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">ObjectUtils.cloneIfPossible(new int[] {1,2,3,4,5})</td>
+<td align="right">[1,2,3,4,5](新对象)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.cloneIfPossible(new BitSet(1))</td>
+<td align="right">{}(新对象)</td>
+</tr>
+
+<tr>
+<td align="left">ObjectUtils.cloneIfPossible(ObjectUtils.NULL)</td>
+<td align="right">ObjectUtils.NULL(自身)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="constants">Constants</h2>
+
+<h3 id="const-xx系列方法">CONST_XX系列方法</h3>
+
+<p>这一系列以CONST开头的方法，除了做最基本的类型校验没有其他逻辑，直接返回传入值。</p>
+
+<p>以下摘自源码中的注释说明：</p>
+
+<blockquote>
+<p>这些方法确保javac不会内联常量。<br />
+例如，通常开发人员可能会声明一个常量，如：<br />
+<code>public final static int MAGIC_NUMBER = 5;</code><br />
+如果不同的jar包引用了这个常量，那么当MAGIC_NUMBER更改（例如，MAGIC_NUMBER = 6）后，之前生成的jar包会重新编译。 因为javac通常将字面量或String常量直接内联到字节码中，而不是直接引用MAGIC_NUMBER字段。<br />
+为了减少不必要的重新编译，开发人员可以使用<code>CONST()</code>方法来声明它们的常量：<br />
+<code>public final static int MAGIC_NUMBER = CONST(5);</code></p>
+</blockquote>
+
+<p>可见，总体来说是用来优化编译器行为的。</p>
+
+            </div>
+            <div class="article-menu">
+                
+                <ul id="article-nav-ul">
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div style="clear: both;"></div>
+
+        <footer id="footer" class="footer">
+    <nav class="footer-nav">
+        
+            
+                <a href="/zh/docs/">文档</a>
+            
+        
+            
+                
+        
+            
+                <a href="/">返回首页</a>
+            
+        
+    </nav>
+    <div class="social">
+        <a href="https://github.com/choerodon/" target="_blank" class="social-single"><i class="iconfont icon-github-footer"></i></a>
+        <i class="iconfont icon-wechat-footer social-single"></i>
+        <div class="wechat-hover load-img">
+            <div data-loader='circle'></div>
+            <img data-src="/img/footer/wechat-code.jpg"/>
+        </div>
+        
+        <a href="http://forum.choerodon.io/" target="_blank" class="social-single"><i class="iconfont icon-forum-footer"></i></a>
+    </div>
+    <div class="copy-right" class="center">
+        Copyright &copy; The Choerodon Author. All rights reserved.
+    </div>
+    <div id="big-img" class="black-big-img">
+        <img src="" alt="">
+    </div>
+</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        
+        
+    </body>
+
+    <script src="/js/front.js"></script>
+
+    <script src="/js/doc-search.js"></script>
+
+    <script src="/js/docs.js"></script>
+
+    <script src="/js/player.js"></script>
+
+</html>

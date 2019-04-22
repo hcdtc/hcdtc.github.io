@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>代码复查 on Choerodon | 开源多云应用平台</title>
+    <title>代码复查 on 汉得中台成都远程中心 | 中台远程交付团队</title>
     <link>http://hcdtc.github.io/zh/docs/99-code-review/</link>
-    <description>Recent content in 代码复查 on Choerodon | 开源多云应用平台</description>
+    <description>Recent content in 代码复查 on 汉得中台成都远程中心 | 中台远程交付团队</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="http://hcdtc.github.io/zh/docs/99-code-review/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>代码复查清单</title>
+      <link>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</guid>
+      <description>代码复查清单  table th:first-of-type { width: 100px; } table th:nth-of-type(2) { width: 100px; } table th:nth-of-type(3) { width: 200px; }   注意：此清单只能在最后附加Code Check Point(CCP)，不能从中间插入，每一项都有对应的唯一编号
+ 分类代码： * 1-性能项 * 2-潜在风险 * 3-常规项 * 4-安全项 * 5-文档项 * 6-测试项     序号 分类 要点 描述     CCP-1 1-性能项 事务粒度 保持事务精简，尽量减少对共享资源的占用，优化共享资源竞争，例如：某些耗时的取值逻辑是否可以拿出事务之外，而又不影响事务结果   CCP-2 1-性能项 多线程改造 特定的应用场景可以采用多线程并行处理，当然也要考虑随之而来的并发问题   CCP-3 1-性能项 同步粒度 避免过分的同步，尽量保持同步区域的最小，并尽量使用新的并发库   CCP-4 1-性能项 String的连接性能 识别、修正，StringBuilder/StringBuffer替代   CCP-5 1-性能项 数据结构是否应用合理 注意：Set/Map/List/Array等的应用场景   CCP-6 1-性能项 循环结构是否应用合理 例如，多次循环相同的数据是否可以合并，耗时操作是否可以提到循环外，If判断是否可以提到循环外等等   CCP-7 1-性能项 减少网络交互次数和负载 例如，批量改造，精简请求、响应数据格式   CCP-8 1-性能项 减少数据库交互次数及负载 例如，多次查询是否可以合并，结果是否可以精简   CCP-9 1-性能项 耗时操作的处理 如何避免重复计算，如何缓存起来复用处理结果   CCP-10 1-性能项 最短路径返回 减少资源消耗，常见场景有两个：1.</description>
+    </item>
     
   </channel>
 </rss>

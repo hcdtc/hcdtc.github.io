@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta name="baidu-site-verification" content="NQB7kASlT6" />
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>分支管理</title>
+  
+  
+  <meta name="keywords" content="devops">	
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  
+  <script src="/js/rem.js"></script>
+  
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-144.png">
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8b9485b9f982efd2c649f426a25b1fe8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+</head>
+
+    <link href="/css/docs.css" rel="stylesheet">
+    <header id="header">
+        <div class='navbar  top-white-nav  top-nav' role="navigation" id="navbar">
+    
+        <div class="navbar-left-buttons">
+            <button type="button" class="navbar-toggle btn-template-main">
+                <i class="iconfont">&#xe78e;</i>
+            </button>
+        </div>
+    
+    
+    
+
+    <div class="navbar-buttons">
+        <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation-mobile">
+            <i class="iconfont">&#xe790;</i>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+            
+        </ul>
+    </div>
+    <div class="global-language">
+        <a>ZH</a>
+        <ul class="language-list">
+            
+            <li><a href="/zh/">中文</a></li>
+            
+            <li><a href="/en/">English</a></li>
+            
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+<div class="navbar-collapse-bg none" id="navbar-collapse-bg">
+    <div class="navbar-collapse collapse" id="navigation-mobile">
+        
+            
+        
+            
+        
+            
+        
+        <ul class="nav navbar-nav navbar-right">
+            
+                
+                    <li>
+                        <a   href="/zh/docs/">文档</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   target="_blank"  href="https://github.com/hcdtc/hcdtc.github.io.git">GITHUB</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        <a   href="/">返回首页</a>
+                    </li>
+                
+            
+        </ul>
+        
+    </div>
+
+</div>
+
+
+    </header>
+    <body>
+        <div id="content" class="docs">
+            
+            
+            <div class="docs-menu">
+            <div class="docs-search"><div class="sidebar-menu search">
+    <input id="search-input" class="search-input" type="text" placeholder='请搜索关键字'>
+    <button id="search" class="search-button" type="submit">搜索</button>
+</div></div>
+                
+                <li data-nav-id="/zh/docs/" class="dd-item parent haschildren">
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/10-overview/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/10-overview/">总体介绍</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/10-overview/0-team-overview/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/10-overview/0-team-overview/">
+                        团队介绍
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/20-development-specification/">开发规范</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/" class="dd-item parent haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/">基础开发规范</a>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/1-branch-management/" class="dd-item parent active">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/1-branch-management/">分支管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/2-version-management/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/2-version-management/">版本管理</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/1-basic/3-name-convention/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/1-basic/3-name-convention/">命名规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/">前端开发规范</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/">开发环境搭建</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/">
+                        开发环境搭建(Mac)
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/" class="dd-item">
+                    <div style='padding-left: 0.8rem;'>
+                    <a href="/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/">
+                        开发环境搭建(Windows)
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/">编码规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/20-development-specification/3-back-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/20-development-specification/3-back-end/">后端开发规范</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/30-development-manual/">开发手册</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/1-front-end/" class="dd-item">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/1-front-end/">前端开发手册</a>
+                        
+                        </div>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/">后端开发手册</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/">开发框架解析</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/">Spring系列</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/">
+                        Spring Boot简介
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/">
+                        Spring Boot自动化配置
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/">
+                        Spring Boot配置类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/" class="dd-item">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/98-dev-architect/2-mybatis/">MyBatis系列</a>
+                        
+                        </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/" class="dd-item haschildren">
+                        <div style='padding-left: 0.64rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/">开发工具类</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/">JDK工具类</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/">
+                        Optional类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/" class="dd-item haschildren">
+                        <div style='padding-left: 0.8rem;'>
+                            <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/">common-lang3</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/">
+                        StringUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/">
+                        ArrayUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/">
+                        DateUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/">
+                        DateFormatUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/">
+                        ClassUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/">
+                        MethodUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/">
+                        FieldUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/">
+                        ObjectUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/">
+                        BooleanUtils工具类
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/" class="dd-item">
+                    <div style='padding-left: 0.96rem;'>
+                    <a href="/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/">
+                        RandomUtils工具类
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/30-development-manual/3-dev-tools/">开发工具指引</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/1-git/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/1-git/">
+                        Git使用指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/30-development-manual/3-dev-tools/2-idea/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/30-development-manual/3-dev-tools/2-idea/">
+                        Idea使用指南
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/80-team-doc/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/80-team-doc/">团队文档</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/" class="dd-item haschildren">
+                        <div style='padding-left: 0.48rem;'>
+                            <a href="/zh/docs/80-team-doc/1-doc-quickstart/">文档指南</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/">
+                        文档贡献指南
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/">
+                        Hugo框架指引
+                    </a>
+                    </div>
+                </li>
+                <li data-nav-id="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/" class="dd-item">
+                    <div style='padding-left: 0.64rem;'>
+                    <a href="/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/">
+                        MarkDown速查手册
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+                
+                <li data-nav-id="/zh/docs/99-code-review/" class="dd-item haschildren">
+                        <div style='padding-left: 0.32rem;'>
+                            <a href="/zh/docs/99-code-review/">代码复查</a>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        </div>
+                    <ul class="none">
+                <li data-nav-id="/zh/docs/99-code-review/1-check-list/" class="dd-item">
+                    <div style='padding-left: 0.48rem;'>
+                    <a href="/zh/docs/99-code-review/1-check-list/">
+                        代码复查清单
+                    </a>
+                    </div>
+                </li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
+            
+            
+            </div>
+            
+            <div class='docs-post content-post ' id="content-post" >
+                
+
+<h1 id="分支管理">分支管理</h1>
+
+<hr />
+
+<p>软件的版本控制以及分支管理贯穿于整个软件产品的生命周期，日常的项目管理对于开发团队能否有节奏且顺利的交付软件也很重要。
+本文档将阐述不同的分支管理模型，以及它们的优缺点和使用的场景。</p>
+
+<h2 id="分支管理规范">分支管理规范</h2>
+
+<p>目前比较流行的分支管理模型有三个，即<code>GitFlow</code>、<code>GitLabFlow</code>、<code>GitHubFlow</code>。下面将介绍这三种分支模型的原理，使用场景和优缺点等。</p>
+
+<h3 id="gitflow">GitFlow</h3>
+
+<p><code>GitFlow</code> 是最早诞生并得到广泛应用的一种工作流程。</p>
+
+<p>该模型中存在两种长期分支：<code>master</code> 和 <code>develop</code>。 <code>master</code>中存放对外发布的版本，只有稳定的发布版本才会合并到<code>master</code>中。 <code>develop</code>用于日常开发，存放最新的开发版本。</p>
+
+<p>也存在三种临时分支：<code>feature</code>, <code>hotfix</code>, <code>release</code>。</p>
+
+<ul>
+<li><code>feature</code>分支是为了开发某个特定功能，从<code>develop</code>分支中切出，开发完成后合并到<code>develop</code>分支中。</li>
+<li><code>hotfix</code>分支是修复发布后发现的Bug的分支，从<code>master</code>分支中切出，修补完成后再合并到<code>master</code>和<code>develop</code>分支。</li>
+<li><code>release</code>分支指发布稳定版本前使用的预发布分支，从<code>develop</code>分支中切出，预发布完成后，合并到<code>develop</code>和<code>master</code>分支中。</li>
+</ul>
+
+<p>优点：</p>
+
+<ul>
+<li><code>feature</code> 分支使开发代码隔离，可以独立的完成开发、构建、测试</li>
+<li><code>feature</code> 分支开发周期长于<code>release</code>时，可避免未完成的<code>feature</code>进入生产环境</li>
+</ul>
+
+<p>缺点：</p>
+
+<ul>
+<li>无法支持持续发布。</li>
+<li>过于复杂的分支管理，加重了开发者的负担，使开发者不能专注开发。</li>
+</ul>
+
+<h3 id="githubflow">GitHubFlow</h3>
+
+<p><code>GitHubFlow</code>分支模型只存在一个<code>master</code>主分支，日常开发都合并至<code>master</code>，永远保持其为最新的代码且随时可发布的。</p>
+
+<ul>
+<li>在需要添加或修改代码时， 基于<code>master</code>创建分支，提交修改。</li>
+<li>创建<code>Pull Request</code>，所有人讨论和审查你的代码。</li>
+<li>然后部署到生产环境中进行验证。</li>
+<li>待验证通过后合并到<code>master</code>分支中。</li>
+</ul>
+
+<p>这个分支模型的优势在于简洁易理解，将<code>master</code>作为核心的分支，代码更新持续集成至<code>master</code>上。根据目前收集到的反应来看，得到了更多的好评，认为<code>GitHubFlow</code>分支模型更加轻便快捷。</p>
+
+<h3 id="gitlabflow">GitLabFlow</h3>
+
+<p><code>GitLabFlow</code> 是<code>GitFlow</code>和<code>GitHubFlow</code>的结合,它吸取了两者的优点，既有适应不同开发环境的弹性，又有单一主分支的简单和便利。</p>
+
+<p>该模型采取上游优先的原则，即只存在一个<code>master</code>主分支，它是所以分支的上游。只有上游分支采纳的变动才能应用到其他分支。</p>
+
+<ul>
+<li><p>对于持续发布的项目，建议在<code>master</code>之外再建立对应的环境分支，如预生产环境<code>pre-production</code>，生产环境<code>production</code>。</p></li>
+
+<li><p>对于版本发布的项目，建议基于<code>master</code>创建稳定版本对应的分支，如<code>stable-1</code>，<code>stable-2</code>。</p></li>
+</ul>
+
+<h3 id="分支命名规约">分支命名规约</h3>
+
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>master</td>
+<td>主分支，可用的、稳定的、可直接发布的版本</td>
+</tr>
+
+<tr>
+<td>develop</td>
+<td>开发主分支，最新的代码分支</td>
+</tr>
+
+<tr>
+<td>feature-**</td>
+<td>功能开发分支</td>
+</tr>
+
+<tr>
+<td>bugfix-**</td>
+<td>未发布bug修复分支</td>
+</tr>
+
+<tr>
+<td>release-**</td>
+<td>预发布分支</td>
+</tr>
+
+<tr>
+<td>hotfix-**</td>
+<td>已发布bug修复分支</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="提交命名规约">提交命名规约</h3>
+
+<p>除了分支的名称需要规范，提交的命名也同样如此。猪齿鱼并没有把这个规则固化到系统中，需要团队共同遵守。</p>
+
+<p>格式为：[操作类型]操作对象名称，如[ADD]readme，代表增加了readme描述文件。</p>
+
+<p>常见的操作类型有：</p>
+
+<ul>
+<li><p>[IMP] 提升改善正在开发或者已经实现的功能</p></li>
+
+<li><p>[FIX] 修正BUG</p></li>
+
+<li><p>[REF] 重构一个功能，对功能重写</p></li>
+
+<li><p>[ADD] 添加实现新功能</p></li>
+
+<li><p>[REM] 删除不需要的文件</p></li>
+</ul>
+
+            </div>
+            <div class="article-menu">
+                
+                <ul id="article-nav-ul">
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div style="clear: both;"></div>
+
+        <footer id="footer" class="footer">
+    <nav class="footer-nav">
+        
+            
+                <a href="/zh/docs/">文档</a>
+            
+        
+            
+                
+        
+            
+                <a href="/">返回首页</a>
+            
+        
+    </nav>
+    <div class="social">
+        <a href="https://github.com/choerodon/" target="_blank" class="social-single"><i class="iconfont icon-github-footer"></i></a>
+        <i class="iconfont icon-wechat-footer social-single"></i>
+        <div class="wechat-hover load-img">
+            <div data-loader='circle'></div>
+            <img data-src="/img/footer/wechat-code.jpg"/>
+        </div>
+        
+        <a href="http://forum.choerodon.io/" target="_blank" class="social-single"><i class="iconfont icon-forum-footer"></i></a>
+    </div>
+    <div class="copy-right" class="center">
+        Copyright &copy; The Choerodon Author. All rights reserved.
+    </div>
+    <div id="big-img" class="black-big-img">
+        <img src="" alt="">
+    </div>
+</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        
+        
+    </body>
+
+    <script src="/js/front.js"></script>
+
+    <script src="/js/doc-search.js"></script>
+
+    <script src="/js/docs.js"></script>
+
+    <script src="/js/player.js"></script>
+
+</html>

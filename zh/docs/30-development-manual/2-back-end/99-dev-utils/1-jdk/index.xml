@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JDK工具类 on 汉得中台成都远程中心 | 中台远程交付团队</title>
+    <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/</link>
+    <description>Recent content in JDK工具类 on 汉得中台成都远程中心 | 中台远程交付团队</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optional类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/</guid>
+      <description>使用 Java8 Optional 的正确姿势 原文链接：使用 Java8 Optional 的正确姿势
+我们知道 Java 8 增加了一些很有用的 API, 其中一个就是 Optional. 如果对它不稍假探索, 只是轻描淡写的认为它可以优雅的解决 NullPointException 的问题, 于是代码就开始这么写了
+Optional&amp;lt;User&amp;gt; user = …… if (user.isPresent()) { return user.getOrders(); } else { return Collections.emptyList(); }  那么不得不说我们的思维仍然是在原地踏步, 只是本能的认为它不过是 User 实例的包装, 这与我们之前写成
+User user = ….. if (user != null) { return user.getOrders(); } else { return Collections.emptyList(); }  实质上是没有任何分别. 这就是我们将要讲到的使用好 Java 8 Optional 类型的正确姿势。我们切换到 Java 8 的 Optional 时, 不能继承性的对待过往 null 时的那种思维, 应该掌握好新的, 正确的使用 Java 8 Optional 的正确姿势.</description>
+    </item>
+    
+  </channel>
+</rss>

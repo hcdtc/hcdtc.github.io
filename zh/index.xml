@@ -1,13 +1,319 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Choerodon | 开源多云应用平台</title>
+    <title>汉得中台成都远程中心 | 中台远程交付团队</title>
     <link>http://hcdtc.github.io/zh/</link>
-    <description>Recent content on Choerodon | 开源多云应用平台</description>
+    <description>Recent content on 汉得中台成都远程中心 | 中台远程交付团队</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="http://hcdtc.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git使用指南</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/1-git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/1-git/</guid>
+      <description> Git使用 </description>
+    </item>
+    
+    <item>
+      <title>Optional类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/1-jdk/1-optional/</guid>
+      <description>使用 Java8 Optional 的正确姿势 原文链接：使用 Java8 Optional 的正确姿势
+我们知道 Java 8 增加了一些很有用的 API, 其中一个就是 Optional. 如果对它不稍假探索, 只是轻描淡写的认为它可以优雅的解决 NullPointException 的问题, 于是代码就开始这么写了
+Optional&amp;lt;User&amp;gt; user = …… if (user.isPresent()) { return user.getOrders(); } else { return Collections.emptyList(); }  那么不得不说我们的思维仍然是在原地踏步, 只是本能的认为它不过是 User 实例的包装, 这与我们之前写成
+User user = ….. if (user != null) { return user.getOrders(); } else { return Collections.emptyList(); }  实质上是没有任何分别. 这就是我们将要讲到的使用好 Java 8 Optional 类型的正确姿势。我们切换到 Java 8 的 Optional 时, 不能继承性的对待过往 null 时的那种思维, 应该掌握好新的, 正确的使用 Java 8 Optional 的正确姿势.</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot简介</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/1-spring-boot-overview/</guid>
+      <description> Spring Boot优势  开箱即用的Starter组件，简化开发 约定优于配置，JavaConfig配置应用等，易于上手 整合开源的运维平台，打造持续交付流水线，工具链齐全，易于管理和运维，利于微服务的交付运维  </description>
+    </item>
+    
+    <item>
+      <title>StringUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/1-stringutils/</guid>
+      <description>StringUtils 工具类使用  工具类：org.apache.commons.lang3.StringUtils
+版本：commons-lang3:3.7
+地址：StringUtils API
+说明：StringUtils 是工作中使用最频繁的一个工具类，提供了丰富的字符串操作方法，如替换、判等、截取、计数等，每个类型都重载了很多方法，且不会抛出空指针异常。
+ 概览 大部分方法都提供了很多重载方法，比如不区分大小写xxIgnoreCase、匹配任何xxAny、还有参数类型不同、参数个数不同的重载等，能适应绝大多数业务场景的需求。
+静态常量 StringUtils 提供了最常用的常量如下，使用定义的常量能让我们的代码更清晰。
+花式截取字符串 @Test public void testSubstring() { // 最基本的截取 System.out.println( StringUtils.substring(&amp;quot;abcde&amp;quot;, 1, 2) ); // b // 截取前半部分 System.out.println( StringUtils.substringBefore(&amp;quot;role/site/admin-(1.site.1)&amp;quot;, &amp;quot;-(&amp;quot;) ); // role/site/admin // 截取后半部分 System.out.println( StringUtils.substringAfter(&amp;quot;role/site/admin-(1.site.1)&amp;quot;, &amp;quot;-&amp;quot;) ); // (1.site.1) // 截取之间的 System.out.println( StringUtils.substringBetween(&amp;quot;role/site/admin-(1.site.1)&amp;quot;, &amp;quot;(&amp;quot;, &amp;quot;)&amp;quot;) ); // 1.site.1 // 截取左边的部分 System.out.println( StringUtils.left(&amp;quot;aabbcc&amp;quot;, 4) ); // aabb // 截取右边的部分 System.out.println( StringUtils.right(&amp;quot;aabbcc&amp;quot;, 4) ); // bbcc // 截取中间部分 System.</description>
+    </item>
+    
+    <item>
+      <title>代码复查清单</title>
+      <link>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</guid>
+      <description>代码复查清单  table th:first-of-type { width: 100px; } table th:nth-of-type(2) { width: 100px; } table th:nth-of-type(3) { width: 200px; }   注意：此清单只能在最后附加Code Check Point(CCP)，不能从中间插入，每一项都有对应的唯一编号
+ 分类代码： * 1-性能项 * 2-潜在风险 * 3-常规项 * 4-安全项 * 5-文档项 * 6-测试项     序号 分类 要点 描述     CCP-1 1-性能项 事务粒度 保持事务精简，尽量减少对共享资源的占用，优化共享资源竞争，例如：某些耗时的取值逻辑是否可以拿出事务之外，而又不影响事务结果   CCP-2 1-性能项 多线程改造 特定的应用场景可以采用多线程并行处理，当然也要考虑随之而来的并发问题   CCP-3 1-性能项 同步粒度 避免过分的同步，尽量保持同步区域的最小，并尽量使用新的并发库   CCP-4 1-性能项 String的连接性能 识别、修正，StringBuilder/StringBuffer替代   CCP-5 1-性能项 数据结构是否应用合理 注意：Set/Map/List/Array等的应用场景   CCP-6 1-性能项 循环结构是否应用合理 例如，多次循环相同的数据是否可以合并，耗时操作是否可以提到循环外，If判断是否可以提到循环外等等   CCP-7 1-性能项 减少网络交互次数和负载 例如，批量改造，精简请求、响应数据格式   CCP-8 1-性能项 减少数据库交互次数及负载 例如，多次查询是否可以合并，结果是否可以精简   CCP-9 1-性能项 耗时操作的处理 如何避免重复计算，如何缓存起来复用处理结果   CCP-10 1-性能项 最短路径返回 减少资源消耗，常见场景有两个：1.</description>
+    </item>
+    
+    <item>
+      <title>开发环境搭建(Mac)</title>
+      <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_mac/</guid>
+      <description> 开发环境搭建(Mac) 本章节讲述了前端开发所需要的一些软件依赖，以及如何在Mac OS 环境下进行安装使用。
+开发工具  Git Node.js 8.11.1及以上版本 python PyYAML PyMySQL  安装提前准备  在HomeBrew官网下载或者根据文档安装homebrew。  Git 安装  在 Git 官网下载Mac平台的Git。 运行 brew install git 安装git。 安装完成后打开终端后执行 git --version ，有提示则说明环境安装成功。  node 安装  在 Node.js官网下载用于Mac平台的安装包。 运行 brew install node 安装node。 配置完成后打开终端执行 node --version，有提示则说明环境安装成功。  在Mac上安装python 在项目中，python(2.7.X)用于执行功能性脚本。
+ 在python 官网 下载2.7版本的python 安装包。 运行brew install python@2 安装python。 配置完成后打开 git bash 执行 python，有提示则说明环境安装成功。 通过pip 安装PyYAML，PyMySQL。打开 git bash 执行 pip install PyYAML PyMySQL，然后安装完成之后执行pip list 查看安装的版本。  </description>
+    </item>
+    
+    <item>
+      <title>开发环境搭建(Windows)</title>
+      <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/1-develop-env/index_windows/</guid>
+      <description> 开发环境搭建(Windows) 本章节讲述了前端开发所需要的一些软件依赖，以及如何在Windows 环境下进行安装使用。
+开发工具  Git Node.js 8.11.1及以上版本 python PyYAML PyMySQL  Git 安装  在 Git 官网 下载对应平台的 Git。 本地执行安装文件，安装 Git 环境。 配置完成后打开 git bash 执行 git --version ，有提示则说明环境安装成功。    对于 Windows，安装 Git 以后，你可以在任意目录右键，选择Git Bash Here。 打开的 MINGW 命令窗口可以执行兼容 linux 系统的命令。   node 安装  在 Node.js官网 下载用于Windows平台的安装包。 本地执行安装文件。 配置完成后打开 git bash 执行 node --version，有提示则说明环境安装成功。  在Windows上安装python Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。
+在项目中，python用于执行功能性脚本。
+ 在python 官网 下载2.7版本的python 安装包。 本地执行安装文件。 配置完成后打开 git bash 执行 python，有提示则说明环境安装成功。 通过pip 安装PyYAML，PyMySQL。打开 git bash 执行 pip install PyYAML PyMySQL，然后安装完成之后执行pip list 查看安装的版本。  </description>
+    </item>
+    
+    <item>
+      <title>文档贡献指南</title>
+      <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/1-contribute-quickstart/</guid>
+      <description> 文档贡献流程 团队成员可以通过Fork-&amp;gt;Pull Request的方式提供文档。 文档库概览  文档库：https://github.com/hcdtc/hcdtc-website.git 发布地址：https://hcdtc.github.io  文档撰写参考  Hugo框架指引 MarkDown速查手册  </description>
+    </item>
+    
+    <item>
+      <title>ArrayUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/2-arrayutils/</guid>
+      <description>ArrayUtils 工具类使用  工具类：org.apache.commons.lang3.ArrayUtils
+版本：commons-lang3:3.7
+地址：ArrayUtils API
+说明：ArrayUtils 是专门用来处理数组的工具类，每种类型的方法都包括8中原生数据类型和包装类型，以及Object、Class、String、Character等。可以优雅地处理空输入，而不会抛出异常，因此不必再判断一次是否为null。
+ 概览 空数组常量 ArrayUtils 工具类一开始提供了空且不可变的数组常量，我们可以在需要返回空数组的地方使用这些已经定义好的数组，避免创建引用。
+索引元素位置 IndexOf @Test public void testIndexOf () { String[] arr = new String[]{&amp;quot;aa&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;}; System.out.println(ArrayUtils.indexOf(arr, &amp;quot;bb&amp;quot;)); // 1 正序查找第一个匹配的元素 System.out.println(ArrayUtils.indexOf(arr, &amp;quot;mm&amp;quot;)); // -1 找不到元素返回 -1 System.out.println(ArrayUtils.indexOf(arr, &amp;quot;bb&amp;quot;, 2)); // 3 第三个参数指定起始位置 System.out.println(ArrayUtils.lastIndexOf(arr, &amp;quot;bb&amp;quot;)); // 3 倒序查找第一个匹配的元素 System.out.println(ArrayUtils.lastIndexOf(arr, &amp;quot;mm&amp;quot;)); // -1 找不到元素返回 -1 System.out.println(ArrayUtils.lastIndexOf(arr, &amp;quot;bb&amp;quot;, 2)); // 1 第三个参数指定起始位置，然后倒序查找匹配的元素 }  判空 isEmpty @Test public void testEmpty() { String[] arr = new String[]{&amp;quot;aa&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;, &amp;quot;bb&amp;quot;, &amp;quot;cc&amp;quot;}; String[] arr2 = new String[]{}; String[] arr3 = null; System.</description>
+    </item>
+    
+    <item>
+      <title>Hugo框架指引</title>
+      <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart/</guid>
+      <description>Hugo 框架指引 Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+Quick start Hugo的安装使用便捷简单，参考官网Hugo quick start。以下主要介绍其基本概念和本项目开发流程。
+目录结构 ├── archetypes ├── config.toml ├── content │ └── docs │ └── xx-doc │ └── x-doc ├── data ├── layouts ├── static └── themes  archetypes
+在通过hugo new xxx 创建内容页面的时候，默认情况下hugo会创建date、title等front matter，可以通过在archetypes目录下创建文件，设置自定义的front matter。
+config.toml
+所有的hugo站点都有一个全局配置文件，用来配置整个站点的信息，hugo默认提供了跟多配置指令。
+content
+站点下所有的内容页面，也就是我们创建的md文件都在这个content目录下面。
+data
+data目录用来存储网站用到一些配置、数据文件。文件类型可以是yaml|toml|json等格式。
+layouts
+存放用来渲染content目录下面内容的模版文件，模版.html格式结尾，layouts可以同时存储在项目目录和themes//layouts目录下。
+static
+用来存储图片、css、js等静态资源文件。
+themes
+用来存储主题，主题可以方便的帮助我们快速建立站点，也可以方便的切换网站的风格样式。
+public
+hugo编译后生成网站的所有文件都存储在这里面，把这个目录放到任意web服务器就可以发布网站成功。
+Hugo 常用命令  hugo init path：在path路径下初始化一个hugo博客目录 hugo server &amp;ndash;buildDrafts：hugo server如果没有带参数，默认在当前目录寻找config.toml，如果没有config.toml，命令中就需要带很多参数。&amp;ndash;buildDrafts意为“编译草稿（draft: true的Markdown文件）” hugo &amp;ndash;buildDrafts：生成可发布的静态html。如果没有指定路径，默认在当前路径下新建public。如果在config.toml中指定了publicdir参数，则默认到该路径下，注意路径的斜杠问题。  部署 假设你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：coderzh.</description>
+    </item>
+    
+    <item>
+      <title>Idea使用指南</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/2-idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/3-dev-tools/2-idea/</guid>
+      <description>在Intellij IDEA中使用Debug　  Debug用来追踪代码的运行流程，通常在程序运行过程中出现异常，启用Debug模式可以分析定位异常发生的位置，以及在运行过程中参数的变化。通常我们也可以启用Debug模式来跟踪代码的运行流程去学习三方框架的源码。
+ 一、Debug开篇 首先看下IDEA中Debug模式下的界面。
+如下是在IDEA中启动Debug模式，进入断点后的界面，我这里是Windows，可能和Mac的图标等会有些不一样。就简单说下图中标注的8个地方：
+① 以Debug模式启动服务，左边的一个按钮则是以Run模式启动。在开发中，我一般会直接启动Debug模式，方便随时调试代码。
+② 断点：在左边行号栏单击左键，或者快捷键Ctrl+F8 打上/取消断点，断点行的颜色可自己去设置。
+③ Debug窗口：访问请求到达第一个断点后，会自动激活Debug窗口。如果没有自动激活，可以去设置里设置，如图1.2。
+④ 调试按钮：一共有8个按钮，调试的主要功能就对应着这几个按钮，鼠标悬停在按钮上可以查看对应的快捷键。在菜单栏Run里可以找到同样的对应的功能，如图1.4。
+⑤ 服务按钮：可以在这里关闭/启动服务，设置断点等。
+⑥ 方法调用栈：这里显示了该线程调试所经过的所有方法，勾选右上角的[Show All Frames]按钮，就不会显示其它类库的方法了，否则这里会有一大堆的方法。
+⑦ Variables：在变量区可以查看当前断点之前的当前方法内的变量。
+⑧ Watches：查看变量，可以将Variables区中的变量拖到Watches中查看
+[图1.1] [图1.2]：在设置里勾选Show debug window on breakpoint，则请求进入到断点后自动激活Debug窗口 [图1.3]：如果你的IDEA底部没有显示工具栏或状态栏，可以在View里打开，显示出工具栏会方便我们使用。可以自己去尝试下这四个选项。 [图1.4]：在菜单栏Run里有调试对应的功能，同时可以查看对应的快捷键。 二、基本用法&amp;amp;快捷键 Debug调试的功能主要对应着图一中4和5两组按钮：
+1、首先说第一组按钮，共8个按钮，从左到右依次如下：
+[图2.1]
+&amp;gt; Show Execution Point (Alt + F10)：如果你的光标在其它行或其它页面，点击这个按钮可跳转到当前代码执行的行。
+　&amp;gt; Step Over (F8)：步过，一行一行地往下走，如果这一行上有方法不会进入方法。
+　&amp;gt; Step Into (F7)：步入，如果当前行有方法，可以进入方法内部，一般用于进入自定义方法内，不会进入官方类库的方法，如第25行的put方法。
+　&amp;gt; Force Step Into (Alt + Shift + F7)：强制步入，能进入任何方法，查看底层源码的时候可以用这个进入官方类库的方法。
+　&amp;gt; Step Out (Shift + F8)：步出，从步入的方法内退出到方法调用处，此时方法已执行完毕，只是还没有完成赋值。</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot自动化配置</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/2-spring-boot-autoconfigure/</guid>
+      <description>探究@SpringBootApplication注解 通过查看源码可知，它是一个复合注解，主要由如下三个注解组成：
+ @SpringBootConfiguration：复合注解，由@Configuration组成，任何一个标注了@Configuration的Java类定义，都是一个JavaConfig配置类。
+ @EnableAutoConfiguration：与其他@Enable开头的注解(例如，@EnableScheduling、@EnableCaching、@EnableMBeanExport等)功能一样，借助@Import的支持，收集和注册特定场景相关的Bean定义。例如： @EnableScheduling是通过@Import将Spring调度框架相关的Bean定义都加载到Spring IoC容器。 @EnableMBeanExport是通过@Import将JMX相关的Bean定义加载到Spring IoC容器。 而@EnableAutoConfiguration则是借助@Import的帮助，将所有符合自动配置条件的Bean定义加载到Spring IoC容器。
+重点解析：从classpath中搜寻所有META-INF/spring.factories配置文件，并将其中org.spring.framework.boot.autoconfigure.EnableAutoConfiguration对应的配置项通过反射（Java Reflection）机制实例化为对应的标注了@Configuration的JavaConfig形式的IoC容器配置类，然后汇总为一个并加载到IoC容器。  @ComponentScan
+  package org.springframework.boot.autoconfigure; import ...; @Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME) @Documented @Inherited @SpringBootConfiguration @EnableAutoConfiguration @ComponentScan( excludeFilters = { @Filter( type = FilterType.CUSTOM, classes = {TypeExcludeFilter.class} ), @Filter( type = FilterType.CUSTOM, classes = {AutoConfigurationExcludeFilter.class} )} ) public @interface SpringBootApplication { @AliasFor( annotation = EnableAutoConfiguration.class, attribute = &amp;quot;exclude&amp;quot; ) Class&amp;lt;?&amp;gt;[] exclude() default {}; @AliasFor( annotation = EnableAutoConfiguration.class, attribute = &amp;quot;excludeName&amp;quot; ) String[] excludeName() default {}; @AliasFor( annotation = ComponentScan.</description>
+    </item>
+    
+    <item>
+      <title>DateUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/3-dateutils/</guid>
+      <description>DateUtils 工具类使用  工具类：org.apache.commons.lang3.time.DateUtils
+版本：commons-lang3:3.7 地址：DateUtils API
+说明：DateUtils 是专门用来处日期工具类,提供String日期转换date,日期的设置,截取,比较,四舍五入以及当前时区获取,设置,等方法
+ 概览 DateUtils常量 DateUtils 定义了年月日时分秒常量 , 以毫秒为单位,年月日时分秒值
+String转Date 参数 arg0 : 日期字符串 String , arg1: 特定的地理，政治和文化地区.可以传null, arg3 : 日期格式.与arg0格式要保持一致String
+@Test public void testStringConvertDate() throws ParseException { //该方法对日期和时间的是宽松的(如 1996 年 2 月 42 日)将被视为等同于 1996 年 2 月 1 日后的第 41 天 Date date1 = DateUtils.parseDate(&amp;quot;20171012 14:30:12&amp;quot;, Locale.TRADITIONAL_CHINESE, &amp;quot;yyyyMMdd hh:mm:ss&amp;quot;); //该方法对日期和时间的解释是严格的 (如 1996 年 2 月 42 日)将会报错 Date date2 = DateUtils.</description>
+    </item>
+    
+    <item>
+      <title>MarkDown速查手册</title>
+      <link>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/3-markdown-quickstart/</guid>
+      <description>Markdown 语法说明 概述 Markdown 的目标是实现「易读易写」。
+可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。
+总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像*强调*。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。
+兼容 HTML Markdown 语法的目标是：成为一种适用于网络的*书写*语言。
+Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想*不是*要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种*发布*的格式，Markdown 是一种*书写*的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。
+不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
+要制约的只有一些 HTML 区块元素――比如 &amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;pre&amp;gt;、&amp;lt;p&amp;gt; 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &amp;lt;p&amp;gt; 标签。
+例子如下，在 Markdown 文件里加上一段 HTML 表格：
+这是一个普通段落。 &amp;lt;table&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/table&amp;gt; 这是另一个普通段落。  请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的*强调*会没有效果。</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot配置类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/98-dev-architect/1-spring/3-spring-boot-config/</guid>
+      <description>Spring Boot配置类 @Configuration/@ConditionXxx等</description>
+    </item>
+    
+    <item>
+      <title>DateFormatUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/4-dateformatutils/</guid>
+      <description>DateFormatUtils 工具类使用  工具类：org.apache.commons.lang3.time.DateFormatUtils
+版本：commons-lang3:3.7
+地址：DateFormatUtils API
+说明：DateFormatUtils 是专门用来处理日期格式转换的工具类，支持 milliseconds、Date、Calendar 转换为自定义的日期格式。
+概述  预定义的日期格式 public static final FastDateFormat ISO_8601_EXTENDED_DATETIME_FORMAT = FastDateFormat.getInstance(&amp;quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_DATETIME_TIME_ZONE_FORMAT = FastDateFormat.getInstance(&amp;quot;yyyy-MM-dd&#39;T&#39;HH:mm:ssZZ&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_DATE_FORMAT = FastDateFormat.getInstance(&amp;quot;yyyy-MM-dd&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_TIME_FORMAT = FastDateFormat.getInstance(&amp;quot;HH:mm:ss&amp;quot;); public static final FastDateFormat ISO_8601_EXTENDED_TIME_TIME_ZONE_FORMAT = FastDateFormat.getInstance(&amp;quot;HH:mm:ssZZ&amp;quot;); public static final FastDateFormat SMTP_DATETIME_FORMAT = FastDateFormat.getInstance(&amp;quot;EEE, dd MMM yyyy HH:mm:ss Z&amp;quot;, Locale.US);  使用 DateFormatUtils进行日期格式转换 //把毫秒转为定义的格式化日期类型 String format = DateFormatUtils.</description>
+    </item>
+    
+    <item>
+      <title>ClassUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/5-classutils/</guid>
+      <description>ClassUtils 工具类使用  工具类：org.apache.commons.lang3.ClassUtils
+版本：commons-lang3:3.7
+地址：ClassUtils API
+说明：ClassUtils 是关于类级别相关的工具类，具有对类的简称getShortClassName()或getSimpleName()、获取所在包名称getPackageName()、获取所有父亲类集合getAllSuperclasses()、获取所有接口getAllInterfaces()、字符串集合到类集合转换convertClassNamesToClasses()、是否原始类判断isPrimitiveOrWrapper()、是否内部类判断isInnerClass()、通过类加载器获取class对象getClass()、获取Public方法getPublicMethod()、获取依赖集hierarchy()等操作方法
+ 概览 获取包名 getPackageName(Class&amp;lt;?&amp;gt; cls)
+//获取包名 String packageName = ClassUtils.getPackageName(String.class); System.out.println(packageName); // java.lang //第一个参数为空,默认返回第二个参数 String packageName2 = ClassUtils.getPackageName(null, &amp;quot;the object is null&amp;quot;); System.out.println(packageName2); // the object is null //传入字符串 String packageName3 = ClassUtils.getPackageName(&amp;quot;java.lang.String&amp;quot;); System.out.println(packageName3); // java.lang //获取规范名 String packageName4 = ClassUtils.getPackageCanonicalName(String.class); System.out.println(packageName4); // java.lang  获取类名 getShortCanonicalName(Class&amp;lt;?&amp;gt; cls)
+getShortClassName(Class&amp;lt;?&amp;gt; cls)
+getSimpleName(Class&amp;lt;?&amp;gt; cls)
+//获取simpleName String simpleName1 = ClassUtils.getSimpleName(String.class); System.out.println(simpleName1); // = String //获取simpleName String simpleName2 = ClassUtils.</description>
+    </item>
+    
+    <item>
+      <title>MethodUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/6-methodutils/</guid>
+      <description>MethodUtils工具类使用  类路径：org.apache.commons.lang3.reflect.MethodUtils 版本：commons-lang3:3.7  Java doc：MethodUtils API 说明：MethodUtils是一个通过反射使用或者获取方法的工具类，它提供了各种获取以及使用方法的方法，甚至可以突破Java作用域的限制。
+ MethodUtils类图 构造方法-&amp;gt;MethodUtils  说明：该工具类虽然提供了构造方法，但该构造方法不应该出现在标准程序中。提供公共构造方法是为了允许在有需要的时候提供JavaBean实例。  public MethodUtils()  反射执行类方法-&amp;gt;invokeMethod  反射执行一个无参的方法  /** * @param object 方法名所在的对象 * @param methodName 方法名 * @return 方法反射结果返回值 */ public static Object invokeMethod(final Object object, final String methodName);   根据forceAccess参数判断反射执行时是否需要考虑Java作用域问题  /** * @param object 方法名所在的对象 * @param forceAccess true为反射时无视Java方法作用域，false则相反 * @param methodName 方法名 * @return 方法反射结果返回值 */ public static Object invokeMethod(final Object object, final boolean forceAccess, final String methodName);   反射执行一个有参的方法  /** * @param object 方法名所在的对象 * @param methodName 方法名 * @param args 反射需要传入的参数，支持多个参数 * @return 方法反射结果返回值 */ public static Object invokeMethod(final Object object, final String methodName,Object.</description>
+    </item>
+    
+    <item>
+      <title>FieldUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/7-fieldutils/</guid>
+      <description>FieldUtils 工具类使用  类路径：org.apache.commons.lang3.reflect.FieldUtils 版本：commons-lang3:3.7  Java doc：FieldUtils API 说明：FieldUtils是一个通过反射处理字段的实用工具类，它提供的方法超出了普通编码的范围，可以修改不应该修改的字段，应该谨慎使用该工具类
+ FieldUtils 类图 构造方法  说明：该工具类虽然提供了构造方法，但该构造方法不应该出现在标准程序中。提供公共构造方法是为了允许在有需要的时候提供JavaBean实例。  FieldUtils()  获取类字段  返回指定类以及父类(如果有)中的所有字段，以数组格式返回  /** * * @param cls 查询的类，不允许为空 * @return 返回一个字段数组(可能为空). * @throws IllegalArgumentException 类为null时抛出无效参数异常 */ static Field[] getAllFields(Class&amp;lt;?&amp;gt; cls)   返回指定类以及父类(如果有)中的所有字段，以List格式返回  /** * * @param cls 查询的类，不允许为空 * @return 返回一个字段列表(可能为空). * @throws IllegalArgumentException 类为null时抛出无效参数异常 */ static List&amp;lt;Field&amp;gt; getAllFieldsList(Class&amp;lt;?&amp;gt; cls)   通过字段名称获取指定类中一个可访问范围内的字段  /** * * @param cls 查询的类，不允许为空 * @param fieldName 字段名称 * @return 字段对象 * @throws IllegalArgumentException 类为null时抛出无效参数异常 */ static Field getDeclaredField(Class&amp;lt;?</description>
+    </item>
+    
+    <item>
+      <title>ObjectUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/8-objectutils/</guid>
+      <description>ObjectUtils 工具类使用  工具类：org.apache.commons.lang3.ObjectUtils
+版本：commons-lang3:3.7
+地址：ObjectUtils API
+说明：ObjectUtils 是处理对象常用操作的工具类，包含默认值、hash/equals(已废弃)、Object原生toString()、toString(已废弃)、比较、求最常出现值、克隆和内联常量编译优化几部分。
+ 概览 NULL常量 此常量为ObjectUtils内部类org.apache.commons.lang3.ObjectUtils.Null的一个实例，可以用来做Hashtable的键，用来代替不被接受的null。
+默认值 defaultIfNull(T, T) 如果传递的对象为null，则返回默认值。
+   表达式 值     ObjectUtils.defaultIfNull(null,null) null   ObjectUtils.defaultIfNull(null,&amp;ldquo;&amp;rdquo;) &amp;rdquo;&amp;rdquo;   ObjectUtils.defaultIfNull(null,&amp;ldquo;zz&amp;rdquo;) &amp;ldquo;zz&amp;rdquo;   ObjectUtils.defaultIfNull(&amp;ldquo;abc&amp;rdquo;,*) &amp;ldquo;abc&amp;rdquo;   ObjectUtils.defaultIfNull(Boolean.TRUE,*) Boolean.TRUE    firstNonNull(T&amp;hellip;) 返回数组中非空的第一个值。 如果所有值都为null或数组为null或为空，则返回null。
+   表达式 值     ObjectUtils.firstNonNull(null,null) null   ObjectUtils.firstNonNull(null,&amp;ldquo;&amp;rdquo;) &amp;rdquo;&amp;rdquo;   ObjectUtils.firstNonNull(null,null,&amp;ldquo;&amp;rdquo;) &amp;rdquo;&amp;rdquo;   ObjectUtils.</description>
+    </item>
+    
+    <item>
+      <title>BooleanUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/9-booleanutils/</guid>
+      <description>BooleanUtils 工具类使用  工具类：org.apache.commons.lang3.BooleanUtils
+版本：commons-lang3:3.7
+地址：BooleanUtils API
+说明：BooleanUtils 用来操作基础布尔或者布尔对象。可以优雅地处理空输入，而不会抛出异常。
+ 概览 布尔工具类 比较两个布尔值并返回int类型 如果x == y返回0， !x &amp;amp;&amp;amp; y 返回小于 0 ，x &amp;amp;&amp;amp; !y 返回大于0 compare(boolean x, boolean y) isFalse(Boolean bool) 是否是假并返回boolean isTrue(Boolean bool) 是否是真并返回boolean isFalse(Boolean bool) negate(Boolean bool) 逻辑非 BooleanUtils.negate(Boolean.TRUE) = Boolean.FALSE; BooleanUtils.negate(Boolean.FALSE) = Boolean.TRUE; BooleanUtils.negate(null) = null;  逻辑与 and(boolean&amp;hellip; array) BooleanUtils.and(true, true) = true BooleanUtils.and(false, false) = false BooleanUtils.and(true, false) = false BooleanUtils.and(true, true, false) = false BooleanUtils.</description>
+    </item>
+    
+    <item>
+      <title>RandomUtils工具类</title>
+      <link>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/30-development-manual/2-back-end/99-dev-utils/2-common-lang3/10-randomutils/</guid>
+      <description>RandomUtils工具使用  工具类：org.apache.commons.lang3.ArrayUtils
+版本：commons-lang3:3.7
+地址： RandomUtils API
+说明： RandomUtils是专门用来生成随机数的工具类，支持5种数字类型(byte、int、long、float、double)和布尔型(boolean)。
+ 概览 随机布尔值 boolean flag = RandomUtils.nextBoolean(); // true  随机字节数组  参数：返回数组的大小
+ byte[] number = RandomUtils.nextBytes(6); // B@5679c6c6  随机int型整数  1.返回一个0 - Integer.MAX_VALUE之间的随机整数
+ int number = RandomUtils.nextInt(); // 1599277713   2.返回一个在指定区间内的int型随机整数
+参数：startInclusive 最小值（包含，非负）
+参数：endExclusive 最大值（不包含）
+ int number = RandomUtils.nextInt(20, 60); // 42  随机long型整数  1.返回一个0 - Long.MAX_VALUE之间的随机整数
+ long number = RandomUtils.nextLong(); // 2057158075517831168   2.</description>
+    </item>
     
     <item>
       <title>团队介绍</title>
