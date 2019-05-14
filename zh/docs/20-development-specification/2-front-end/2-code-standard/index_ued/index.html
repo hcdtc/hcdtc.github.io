@@ -7,12 +7,14 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
-      <title>编码规范</title>
+      <title>UED开发编码规范</title>
   
   
   <meta name="keywords" content="devops">	
   
 
+  
+  <meta name="description" content="UED开发编码规范">
   
 
   
@@ -231,14 +233,14 @@
                     </ul>
                 </li>
                 
-                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item parent active haschildren">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item parent haschildren">
                         <div style='padding-left: 0.64rem;'>
                             <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/">编码规范</a>
                         
                             <i class="iconfont caret-down icon-arrow-up"></i>
                         </div>
                     <ul class="none">
-                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/" class="dd-item">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/" class="dd-item active">
                     <div style='padding-left: 0.8rem;'>
                     <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/">
                         UED开发编码规范
@@ -543,26 +545,169 @@
             <div class='docs-post content-post ' id="content-post" >
                 
 
-<h1 id="编码规范">编码规范</h1>
+<h1 id="ued开发编码规范">UED开发编码规范</h1>
 
-<hr />
+<p>本章节是对UED规范的编码规范补充，请结合<code>PC-UEDGUIDE.pdf</code>规范查看。</p>
 
-<p>本文档详细介绍了前端编码规范。</p>
+<h2 id="表格查询页面">表格查询页面</h2>
 
-<h2>功能</h2>
+<p>大多数表格查询页面由上方的查询表单及下方的表格组成，对于常见的超过3个查询条件的表单编码示例如下：</p>
 
-    <ul>
-        
-            <li>
-                <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/">UED开发编码规范</a> UED开发编码规范
-            </li>
-        
-            <li>
-                <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_constants/">页面布局常量</a> 页面布局常量
-            </li>
-        
-    </ul>
+<p>注意：代码中引用的常量均来自<code>utils/constants</code>文件中定义的各类布局常用值，可在本文档<a href="../index_constants">页面布局常量</a>中查看。</p>
 
+<pre><code>       ...
+       &lt;Form layout=&quot;inline&quot; className=&quot;more-fields-search-form&quot;&gt;
+        &lt;Row {...SEARCH_FORM_ROW_LAYOUT}&gt;
+          &lt;Col {...FORM_COL_4_LAYOUT}&gt;
+            &lt;Form.Item {...SEARCH_FORM_ITEM_LAYOUT} label={intl.get(`${prefix}.code`).d('8D编号')}&gt;
+              {getFieldDecorator('problemNum', {
+                rules: [
+                  {
+                    max: 20,
+                    message: intl.get('hzero.common.validation.max', {
+                      max: 20,
+                    }),
+                  },
+                ],
+              })(&lt;Input trim typeCase=&quot;upper&quot; inputChinese={false} /&gt;)}
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+          &lt;Col {...FORM_COL_4_LAYOUT}&gt;
+            &lt;Form.Item {...SEARCH_FORM_ITEM_LAYOUT} label={intl.get(`${prefix}.title`).d('8D标题')}&gt;
+              {getFieldDecorator('problemTitle', {
+                rules: [
+                  {
+                    max: 80,
+                    message: intl.get('hzero.common.validation.max', {
+                      max: 80,
+                    }),
+                  },
+                ],
+              })(&lt;Input trim /&gt;)}
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+          &lt;Col {...FORM_COL_4_LAYOUT}&gt;
+            &lt;Form.Item
+              {...SEARCH_FORM_ITEM_LAYOUT}
+              label={intl.get(`${prefix}.issue`).d('问题类型')}
+            &gt;
+              {getFieldDecorator('problemTypeCode', {})(
+                &lt;Select allowClear&gt;
+                  {issueType.map(item =&gt; (
+                    &lt;Select.Option key={item.value} value={item.value}&gt;
+                      {item.meaning}
+                    &lt;/Select.Option&gt;
+                  ))}
+                &lt;/Select&gt;
+              )}
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+          &lt;Col {...FORM_COL_4_LAYOUT} className=&quot;search-btn-more&quot;&gt;
+            &lt;Form.Item&gt;
+              &lt;Button onClick={this.toggleForm}&gt;
+                {expandForm
+                  ? intl.get('hzero.common.button.collected').d('收起查询')
+                  : intl.get('hzero.common.button.viewMore').d('更多查询')}
+              &lt;/Button&gt;
+              &lt;Button data-code=&quot;reset&quot; onClick={this.handleFormReset}&gt;
+                {intl.get('hzero.common.button.reset').d('重置')}
+              &lt;/Button&gt;
+              &lt;Button
+                data-code=&quot;search&quot;
+                type=&quot;primary&quot;
+                htmlType=&quot;submit&quot;
+                onClick={this.handleSearch}
+              &gt;
+                {intl.get('hzero.common.button.search').d('查询')}
+              &lt;/Button&gt;
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+        &lt;/Row&gt;
+        ...
+</code></pre>
+
+<h2 id="详情表单页面">详情表单页面</h2>
+
+<p>详情或编辑页面的表单多由<code>Collapse</code>组件与<code>Form</code>组件相结合。</p>
+
+<p><code>Collapse</code>组件编码示例如下：</p>
+
+<pre><code>        ...
+        /**
+        * onCollapseChange - 折叠面板onChange
+        * @param {Array&lt;string&gt;} collapseKeys - Panels key
+        */
+        @Bind()
+        onCollapseChange(collapseKeys) {
+            this.setState({
+            collapseKeys,
+            });
+        }
+        ...
+        ...
+        &lt;Content className={classNames(styles['page-content'])}&gt;
+          &lt;Spin
+            spinning={newFlag ? false : loading.fetch}
+            wrapperClassName={classNames(DETAIL_DEFAULT_CLASSNAME)}
+          &gt;
+            &lt;Collapse
+              forceRender
+              className=&quot;form-collapse&quot;
+              defaultActiveKey={collapseKeys}
+              onChange={this.onCollapseChange}
+            &gt;
+              &lt;Collapse.Panel
+                showArrow={false}
+                header={
+                  &lt;Fragment&gt;
+                    &lt;h3&gt;{intl.get(`${prefix}.panel.B`).d('基本信息')}&lt;/h3&gt;
+                    &lt;a&gt;
+                      {collapseKeys.includes('B')
+                        ? intl.get(`hzero.common.button.up`).d('收起')
+                        : intl.get(`hzero.common.button.expand`).d('展开')}
+                    &lt;/a&gt;
+                    &lt;Icon type={collapseKeys.includes('B') ? 'up' : 'down'} /&gt;
+                  &lt;/Fragment&gt;
+                }
+                key=&quot;B&quot;
+              &gt;
+                &lt;BasicInfoForm {...basicInfoProps} tenantId={this.props.tenantId} /&gt;
+              &lt;/Collapse.Panel&gt;
+              ...
+</code></pre>
+
+<p><code>Form</code>组件编码示例如下, <code>Row</code>的类名根据该行是编辑表单/展示表单来决定，可在<code>utils/constants</code>文件中查看所有常用类名。</p>
+
+<pre><code>      ...
+      &lt;Form&gt;
+        &lt;Row {...EDIT_FORM_ROW_LAYOUT} className=&quot;writable-row&quot;&gt;
+          &lt;Col {...FORM_COL_3_LAYOUT}&gt;
+            &lt;Form.Item label={intl.get(`${prefix}.code`).d('8D编号')} {...EDIT_FORM_ITEM_LAYOUT}&gt;
+              {getFieldDecorator('problemNum', {
+                initialValue: dataSource.problemNum,
+              })(&lt;Input disabled /&gt;)}
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+          &lt;Col {...FORM_COL_3_LAYOUT}&gt;
+            &lt;Form.Item label={intl.get(`${prefix}.status`).d('8D状态')} {...EDIT_FORM_ITEM_LAYOUT}&gt;
+              {getFieldDecorator('problemStatusMeaning', {
+                initialValue: newFlag ? statusMeaning : dataSource.problemStatusMeaning,
+              })(&lt;Input disabled /&gt;)}
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+          &lt;Col {...FORM_COL_3_LAYOUT}&gt;
+            &lt;Form.Item
+              label={intl.get(`entity.roles.creator`).d('创建人')}
+              {...EDIT_FORM_ITEM_LAYOUT}
+            &gt;
+              {getFieldDecorator('createdName', {
+                initialValue: newFlag ? user : dataSource.createdName,
+              })(&lt;Input disabled /&gt;)}
+            &lt;/Form.Item&gt;
+          &lt;/Col&gt;
+        &lt;/Row&gt;
+        ...
+</code></pre>
 
             </div>
             <div class="article-menu">

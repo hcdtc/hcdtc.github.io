@@ -7,12 +7,14 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
-      <title>编码规范</title>
+      <title>代码复查日志</title>
   
   
   <meta name="keywords" content="devops">	
   
 
+  
+  <meta name="description" content="代码复查日志">
   
 
   
@@ -162,11 +164,10 @@
                     </ul>
                 </li>
                 
-                <li data-nav-id="/zh/docs/20-development-specification/" class="dd-item parent haschildren">
+                <li data-nav-id="/zh/docs/20-development-specification/" class="dd-item haschildren">
                         <div style='padding-left: 0.32rem;'>
                             <a href="/zh/docs/20-development-specification/">开发规范</a>
-                        
-                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
                         </div>
                     <ul class="none">
                 
@@ -200,11 +201,10 @@
                     </ul>
                 </li>
                 
-                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/" class="dd-item parent haschildren">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/" class="dd-item haschildren">
                         <div style='padding-left: 0.48rem;'>
                             <a href="/zh/docs/20-development-specification/2-front-end/">前端开发规范</a>
-                        
-                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
                         </div>
                     <ul class="none">
                 
@@ -231,11 +231,10 @@
                     </ul>
                 </li>
                 
-                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item parent active haschildren">
+                <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/" class="dd-item haschildren">
                         <div style='padding-left: 0.64rem;'>
                             <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/">编码规范</a>
-                        
-                            <i class="iconfont caret-down icon-arrow-up"></i>
+                        <i class="iconfont caret-right icon-arrow-down"></i>
                         </div>
                     <ul class="none">
                 <li data-nav-id="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/" class="dd-item">
@@ -512,10 +511,11 @@
                     </ul>
                 </li>
                 
-                <li data-nav-id="/zh/docs/99-code-review/" class="dd-item haschildren">
+                <li data-nav-id="/zh/docs/99-code-review/" class="dd-item parent haschildren">
                         <div style='padding-left: 0.32rem;'>
                             <a href="/zh/docs/99-code-review/">代码复查</a>
-                        <i class="iconfont caret-right icon-arrow-down"></i>
+                        
+                            <i class="iconfont caret-down icon-arrow-up"></i>
                         </div>
                     <ul class="none">
                 <li data-nav-id="/zh/docs/99-code-review/1-check-list/" class="dd-item">
@@ -525,7 +525,7 @@
                     </a>
                     </div>
                 </li>
-                <li data-nav-id="/zh/docs/99-code-review/99-review-log/" class="dd-item">
+                <li data-nav-id="/zh/docs/99-code-review/99-review-log/" class="dd-item active">
                     <div style='padding-left: 0.48rem;'>
                     <a href="/zh/docs/99-code-review/99-review-log/">
                         代码复查日志
@@ -543,26 +543,25 @@
             <div class='docs-post content-post ' id="content-post" >
                 
 
-<h1 id="编码规范">编码规范</h1>
+<h1 id="2019-04-29">2019-04-29</h1>
 
-<hr />
+<ol>
+<li><p>泛化接口。
+对于消息监听的service,不要用RocketmqXXX命名，直接MqXXX就好。底层消息系统更换最好不影响接口使用</p></li>
 
-<p>本文档详细介绍了前端编码规范。</p>
+<li><p>SQL注入问题
+建表的DDL直接被执行是有恶意SQL注入的风险的</p></li>
 
-<h2>功能</h2>
+<li><p>多线程任务的错误感知。
+数据分发的时候，当一个线程执行失败，主线程要立马感知到并停止继续执行分页查询以及将数据发给消费组操作。</p></li>
 
-    <ul>
-        
-            <li>
-                <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/">UED开发编码规范</a> UED开发编码规范
-            </li>
-        
-            <li>
-                <a href="/zh/docs/20-development-specification/2-front-end/2-code-standard/index_constants/">页面布局常量</a> 页面布局常量
-            </li>
-        
-    </ul>
+<li><p>数据恢复问题
+租户维度对于大数据而言，不要用事务，需要将当前租户id更改为uniqueId而不是删除，然后执行成功删除，否则改回来</p></li>
 
+<li><p>offset 消费起点问题
+对于offset的查询，从send表的初始化时间戳前面的最近的数据作为消费offset起始数据。因为在初始化前队列可能已经有了消息，
+查不到会从0消费。</p></li>
+</ol>
 
             </div>
             <div class="article-menu">

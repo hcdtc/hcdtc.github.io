@@ -27,6 +27,10 @@
   </url>
   
   <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/</loc>
+  </url>
+  
+  <url>
     <loc>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</loc>
   </url>
   
@@ -40,6 +44,10 @@
   
   <url>
     <loc>http://hcdtc.github.io/zh/docs/20-development-specification/1-basic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/30-development-manual/1-front-end/1-technology-stack/</loc>
   </url>
   
   <url>
@@ -100,6 +108,10 @@
   
   <url>
     <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/index_constants/</loc>
   </url>
   
   <url>
@@ -176,6 +188,10 @@
   
   <url>
     <loc>http://hcdtc.github.io/zh/docs/99-code-review/</loc>
+  </url>
+  
+  <url>
+    <loc>http://hcdtc.github.io/zh/docs/99-code-review/99-review-log/</loc>
   </url>
   
   <url>

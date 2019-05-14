@@ -55,6 +55,18 @@ User user = ….. if (user != null) { return user.getOrders(); } else { return C
     </item>
     
     <item>
+      <title>UED开发编码规范</title>
+      <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/index_ued/</guid>
+      <description>UED开发编码规范 本章节是对UED规范的编码规范补充，请结合PC-UEDGUIDE.pdf规范查看。
+表格查询页面 大多数表格查询页面由上方的查询表单及下方的表格组成，对于常见的超过3个查询条件的表单编码示例如下：
+注意：代码中引用的常量均来自utils/constants文件中定义的各类布局常用值，可在本文档页面布局常量中查看。
+ ... &amp;lt;Form layout=&amp;quot;inline&amp;quot; className=&amp;quot;more-fields-search-form&amp;quot;&amp;gt; &amp;lt;Row {...SEARCH_FORM_ROW_LAYOUT}&amp;gt; &amp;lt;Col {...FORM_COL_4_LAYOUT}&amp;gt; &amp;lt;Form.Item {...SEARCH_FORM_ITEM_LAYOUT} label={intl.get(`${prefix}.code`).d(&#39;8D编号&#39;)}&amp;gt; {getFieldDecorator(&#39;problemNum&#39;, { rules: [ { max: 20, message: intl.get(&#39;hzero.common.validation.max&#39;, { max: 20, }), }, ], })(&amp;lt;Input trim typeCase=&amp;quot;upper&amp;quot; inputChinese={false} /&amp;gt;)} &amp;lt;/Form.Item&amp;gt; &amp;lt;/Col&amp;gt; &amp;lt;Col {...FORM_COL_4_LAYOUT}&amp;gt; &amp;lt;Form.Item {...SEARCH_FORM_ITEM_LAYOUT} label={intl.get(`${prefix}.title`).d(&#39;8D标题&#39;)}&amp;gt; {getFieldDecorator(&#39;problemTitle&#39;, { rules: [ { max: 80, message: intl.get(&#39;hzero.common.validation.max&#39;, { max: 80, }), }, ], })(&amp;lt;Input trim /&amp;gt;)} &amp;lt;/Form.Item&amp;gt; &amp;lt;/Col&amp;gt; &amp;lt;Col {...FORM_COL_4_LAYOUT}&amp;gt; &amp;lt;Form.Item {...SEARCH_FORM_ITEM_LAYOUT} label={intl.get(`${prefix}.issue`).d(&#39;问题类型&#39;)} &amp;gt; {getFieldDecorator(&#39;problemTypeCode&#39;, {})( &amp;lt;Select allowClear&amp;gt; {issueType.</description>
+    </item>
+    
+    <item>
       <title>代码复查清单</title>
       <link>http://hcdtc.github.io/zh/docs/99-code-review/1-check-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -175,6 +187,16 @@ Hugo 常用命令  hugo init path：在path路径下初始化一个hugo博客目
  @EnableAutoConfiguration：与其他@Enable开头的注解(例如，@EnableScheduling、@EnableCaching、@EnableMBeanExport等)功能一样，借助@Import的支持，收集和注册特定场景相关的Bean定义。例如： @EnableScheduling是通过@Import将Spring调度框架相关的Bean定义都加载到Spring IoC容器。 @EnableMBeanExport是通过@Import将JMX相关的Bean定义加载到Spring IoC容器。 而@EnableAutoConfiguration则是借助@Import的帮助，将所有符合自动配置条件的Bean定义加载到Spring IoC容器。
 重点解析：从classpath中搜寻所有META-INF/spring.factories配置文件，并将其中org.spring.framework.boot.autoconfigure.EnableAutoConfiguration对应的配置项通过反射（Java Reflection）机制实例化为对应的标注了@Configuration的JavaConfig形式的IoC容器配置类，然后汇总为一个并加载到IoC容器。  @ComponentScan
   package org.springframework.boot.autoconfigure; import ...; @Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME) @Documented @Inherited @SpringBootConfiguration @EnableAutoConfiguration @ComponentScan( excludeFilters = { @Filter( type = FilterType.CUSTOM, classes = {TypeExcludeFilter.class} ), @Filter( type = FilterType.CUSTOM, classes = {AutoConfigurationExcludeFilter.class} )} ) public @interface SpringBootApplication { @AliasFor( annotation = EnableAutoConfiguration.class, attribute = &amp;quot;exclude&amp;quot; ) Class&amp;lt;?&amp;gt;[] exclude() default {}; @AliasFor( annotation = EnableAutoConfiguration.class, attribute = &amp;quot;excludeName&amp;quot; ) String[] excludeName() default {}; @AliasFor( annotation = ComponentScan.</description>
+    </item>
+    
+    <item>
+      <title>页面布局常量</title>
+      <link>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/index_constants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/20-development-specification/2-front-end/2-code-standard/index_constants/</guid>
+      <description> 页面布局常量 本章节归纳了页面布局常用常量，现已满足大部分页面的布局需求。页面布局时应当尽量从全局常量中引用样式，如果没有所需的样式，再自行定义。
+/* 默认前后端交互格式-日期 */ export const DEFAULT_DATE_FORMAT = &#39;YYYY-MM-DD&#39;; /* 默认前后端交互格式-日期时间 */ export const DEFAULT_DATETIME_FORMAT = &#39;YYYY-MM-DD HH:mm:ss&#39;; /* 默认前后端交互格式-时间 */ export const DEFAULT_TIME_FORMAT = &#39;HH:mm:ss&#39;; /* 特定格式的日期处理格式，时分秒指定为00:00:00 */ export const DATETIME_MIN = &#39;YYYY-MM-DD 00:00:00&#39;; /* 特定格式的日期处理格式，时分秒指定为23:59:59 */ export const DATETIME_MAX = &#39;YYYY-MM-DD 23:59:59&#39;; /* 方法调用时，防反跳时间 */ export const DEBOUNCE_TIME = 200; // private 私有的方法 仅仅只有 公用的方法用到 /* 分页大小 */ /* 设置每页请求条数 */ export const GLOBAL_PAGE_SIZE = 10; /* 指定每页可以显示多少条，第一个值需保持与 GLOBAL_PAGE_SIZE 一致 */ export const PAGE_SIZE_OPTIONS = [&#39;10&#39;, &#39;20&#39;, &#39;50&#39;, &#39;100&#39;]; /** 页面 */ // 查询表单Row的水槽 export const SEARCH_FORM_ROW_LAYOUT = { gutter: 12, }; // 编辑表单Row的水槽 export const EDIT_FORM_ROW_LAYOUT = { gutter: 48, }; /** * 表单 Col layout属性 */ // 3/4 export const FORM_COL_3_4_LAYOUT = { span: 18, }; // 1/2 export const FORM_COL_2_LAYOUT = { span: 12, }; // 1/3 export const FORM_COL_3_LAYOUT = { span: 8, }; // 1/4 export const FORM_COL_4_LAYOUT = { span: 6, }; // 查询表单 拥有 超过两个字段时 表单的布局 export const SEARCH_FORM_ITEM_LAYOUT = { labelCol: { span: 10, }, wrapperCol: { span: 14, }, }; // 编辑表单 表单字段的布局 export const EDIT_FORM_ITEM_LAYOUT = { labelCol: { span: 9, }, wrapperCol: { span: 15, }, }; // 编辑表单 表单字段的布局 占据 一半的宽度 export const EDIT_FORM_ITEM_LAYOUT_COL_2 = { labelCol: { span: 6, }, wrapperCol: { span: 18, }, }; // 编辑表单 表单字段的布局 占据整行 export const EDIT_FORM_ITEM_LAYOUT_COL_3 = { labelCol: { span: 3, }, wrapperCol: { span: 21, }, }; // 表单字段的通用 className export const FORM_FIELD_CLASSNAME = &#39; ued-form-field &#39;; export const SEARCH_FORM_CLASSNAME = &#39; more-fields-form &#39;; export const EDIT_FORM_CLASSNAME = &#39; more-fields-form &#39;; // 查询表单 按钮 Col 的样式 export const SEARCH_COL_CLASSNAME = &#39; search-btn-more &#39;; // 详情/编辑 包裹类（折叠面板） export const DETAIL_DEFAULT_CLASSNAME = &#39; ued-detail-wrapper &#39;; // 详情/编辑 Row 包裹类 export const ROW_READ_ONLY_CLASSNAME = &#39; read-row &#39;; export const ROW_WRITE_ONLY_CLASSNAME = &#39; writable-row &#39;; export const ROW_READ_WRITE_CLASSNAME = &#39; inclusion-row &#39;; export const ROW_HALF_READ_ONLY_CLASSNAME = &#39; read-half-row &#39;; export const ROW_HALF_WRITE_ONLY_CLASSNAME = &#39; half-row &#39;; export const ROW_HALF_READ_WRITE_CLASSNAME = &#39; inclusion-half-row &#39;; // 详情/编辑 包裹类（卡片） export const DETAIL_CARD_CLASSNAME = &#39; ued-detail-card &#39;; export const DETAIL_CARD_TABLE_CLASSNAME = &#39; ued-detail-card-table &#39;; // 表格的操作按钮 的 父元素的class export const TABLE_OPERATOR_CLASSNAME = &#39; table-operator &#39;; /** 弹窗 */ export const MODAL_FORM_ITEM_LAYOUT = { labelCol: { span: 6, }, wrapperCol: { span: 16, }, };  </description>
     </item>
     
     <item>
@@ -313,6 +335,20 @@ getSimpleName(Class&amp;lt;?&amp;gt; cls)
 参数：endExclusive 最大值（不包含）
  int number = RandomUtils.nextInt(20, 60); // 42  随机long型整数  1.返回一个0 - Long.MAX_VALUE之间的随机整数
  long number = RandomUtils.nextLong(); // 2057158075517831168   2.</description>
+    </item>
+    
+    <item>
+      <title>代码复查日志</title>
+      <link>http://hcdtc.github.io/zh/docs/99-code-review/99-review-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://hcdtc.github.io/zh/docs/99-code-review/99-review-log/</guid>
+      <description> 2019-04-29  泛化接口。 对于消息监听的service,不要用RocketmqXXX命名，直接MqXXX就好。底层消息系统更换最好不影响接口使用
+ SQL注入问题 建表的DDL直接被执行是有恶意SQL注入的风险的
+ 多线程任务的错误感知。 数据分发的时候，当一个线程执行失败，主线程要立马感知到并停止继续执行分页查询以及将数据发给消费组操作。
+ 数据恢复问题 租户维度对于大数据而言，不要用事务，需要将当前租户id更改为uniqueId而不是删除，然后执行成功删除，否则改回来
+ offset 消费起点问题 对于offset的查询，从send表的初始化时间戳前面的最近的数据作为消费offset起始数据。因为在初始化前队列可能已经有了消息， 查不到会从0消费。
+  </description>
     </item>
     
     <item>
